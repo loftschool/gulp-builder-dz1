@@ -1,0 +1,59 @@
+//------------------------------ fonts ---------------------------------------//
+
+
+// @font-face {
+//     font-family: 'georgiaitalic';
+//     src: url('../fonts/georgia_italic-webfont.woff2') format('woff2'),
+//          url('../fonts/georgia_italic-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+
+
+//----------------------------------- variable --------------------------------//
+
+// $color-khaki: #a3a78b;
+
+
+
+//------------------------------ base styles ---------------------------------//
+html, body {
+    height: 100%;
+}
+
+body { 
+  margin: 0;
+  // min-width: 320px;
+  // font-family: $base-font;
+  // background-color: $color-green;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    overflow: hidden;
+    padding: 0;
+}
+.wrapper:after {
+    content: "";
+    height: 100px;
+    display: block;
+}
+
+.footer {
+    height: 100px;
+    margin-top: -100px;
+    background-color: #000000;
+}
+
+
+
+//------------------------------------- file import --------------------------//
+
+
+@import 'common/header';
+@import 'common/main-content';
+@import 'common/footer';
+
+ 

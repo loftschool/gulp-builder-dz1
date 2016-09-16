@@ -1,0 +1,13 @@
+{
+  "name": "gulp4.0-builder",
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "~3.1.0"
+  }
+}
