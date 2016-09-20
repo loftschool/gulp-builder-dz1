@@ -2,9 +2,7 @@
 
 Stack:
  - Gulp 4.0
- - Webpack
- - ES6(babel)
-
+ 
 Getting started:
 
 1. clone this repo
