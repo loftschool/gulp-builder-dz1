@@ -1,0 +1,23 @@
+extends ../_template
+
+block variables
+  - var title = 'Login page'
+
+block content
+  form
+    h1 Авторизуйтесь
+    input(type="text" placeholder="Логин")
+    input(type="text" placeholder="Пароль")
+    input(type="checkbox") 
+    label Я человек
+    div
+      p Вы точно не робот?
+      input(type="radio") 
+      label Да
+      input(type="radio")
+      label Не уверен
+    a(href="#") На главную
+    a(href="#") Войти
+  footer
+    p &copy; Елисеев Максим
+    p Создано с любовью в LoftSchool | 2016

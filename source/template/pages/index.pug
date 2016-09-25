@@ -4,4 +4,102 @@ block variables
   - var title = 'Home page'
 
 block content
-  include ../common/_greating
+  header.page-header
+    ul.page-header__list
+      li.page-header__item
+        a.page-header__link(href="#") Vkontakte
+      li.page-header__item 
+        a.page-header__link(href="#") Twitter
+      li.page-header__item
+        a.page-header__link(href="#") Instagram
+    nav.main-nav
+      button.main-nav__btn(type="button") Открыть меню
+      div.main-nav__wrapper
+        ul.main-nav__list
+          li.main-nav__item
+            a.main-nav__link(href="#") Мои работы
+          li.main-nav__item
+            a.main-nav__link(href="#") Блог
+          li.main-nav__item
+            a.main-nav__link(href="#") Обо мне
+          li.main-nav__item
+            a.main-nav__link(href="#") Авторизация
+    div.page-header__block
+      div.page-header__img
+      h1 Елисеев Максим
+      p Личный сайт веб разработчика
+    a.page-header__link(href="#") Ссылка вниз
+    
+  main.wrapper
+    h2.wrapper__title
+    img.wrapper__img
+    section.information
+      ul.information__list
+        li.information__item
+          h3.information__title Кто я
+          p.information__text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+          p.information__text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+        li.information__item
+          h3.information__title Чем я могу быть полезен
+          p.information__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+          ul.information__property-list
+            li.information__property
+              h3.informtion__property-title Frontend
+              ul
+                li HTML5
+                li CSS3
+                li JavaScript & jQuery
+          ul.information__property-list
+            li.information__property
+              h3.informtion__property-title Backend
+              ul
+                li PHP
+                li mySQL
+                li Node.js & npm
+                li Mongo.db
+          ul.information__property-list
+            li.information__property
+              h3.informtion__property-title WorkFlow
+              ul
+                li Git
+                li Gulp
+                li Bower
+        li.information__item
+          h3.information__title Контакты
+          ul
+            li skype_kdn
+            li astahov@gmail.com
+            li + 7 931 200 93 24
+            li Новосибирск, ул. Инская, д. 14
+          div.information__map
+
+  footer.main-footer
+    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+    ul
+      li
+        a(href="#") Мои работы
+      li
+        a(href="#") Обо мне       
+      li
+        a(href="#") Блог
+      li
+        a(href="#") Авторизация
+    ul
+      li
+        a(href="#") Vkontakte
+      li
+        a(href="#") Twitter   
+      li
+        a(href="#") Instagramm
+    ul
+      li
+        a(href="#") skype_kdn
+      li
+        a(href="#") astahov@gmail.com
+      li
+        a(href="#") +7 931 200 93 24
+      li
+        a(href="#") Новосибирск, ул. Инская, д. 14
+    div
+      p &copy; Елисеев Максим
+      p Создано с любовью в LoftSchool | 2016
