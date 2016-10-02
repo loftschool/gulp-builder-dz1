@@ -1,5 +1,19 @@
 body {
   margin: 0;
+  height: 100%;
+  font-family: "Roboto", arial, sans-serif;
+  background: #939393;
 }
 
 @import 'common/greating';
+@import 'common/page-header';
+@import 'common/main-nav';
+@import 'common/footer';
+@import 'common/wrapper';
+@import 'common/information';
+@import 'common/blog';
+@import 'common/fonts';
+@import 'common/about-me';
+@import 'common/login';
+@import 'common/slider';
+@import 'common/reviews';
