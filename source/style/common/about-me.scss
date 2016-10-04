@@ -17,6 +17,10 @@
 	text-align: center;
 	color: #373e42;
 
+	&--about {
+		background: url("../img/about.png") center center no-repeat;
+	}
+
 	&--size {
 		margin-bottom: 17px;
 		font-size: 21px;
@@ -71,6 +75,10 @@
 	font-size: 49px;
 	line-height: 52px;
 
+	&--about {
+		background: url("../img/about2.png") center center no-repeat;
+	}
+
 	&--size {
 		margin-bottom: 12px;
 		padding-bottom: 16px;
@@ -117,6 +125,20 @@
 	font-size: 63px;
 	line-height: 66px;
 
+	&--about {
+		background: none;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: -35px;
+			left: 120px;
+			width: 357px;
+			height: 125px;
+			background: url("../img/about3.png") center center no-repeat;
+		}
+	}
+
 	&--size {
 		margin-bottom: 14px;
 		padding-bottom: 14px;
@@ -161,6 +183,14 @@
 		margin: 0 auto;
 		margin-bottom: 	25px;
 		padding-bottom: 25px;
+	}
+
+	&--about {
+
+		&::after {
+			top: -35px;
+			left: -61px;
+		}
 	}
 }
 

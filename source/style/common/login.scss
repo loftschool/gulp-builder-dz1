@@ -2,17 +2,18 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	// margin: 0 auto;
+	margin: 0 auto;
 	padding: 0 10px;
 	padding-bottom: 10px;
-	width: 300px;
-	height: 100%;
+	width: 100%;
+	min-height: 100vh;
 	background: url("../img/loginback.png") center top no-repeat;
+	background-size: cover;
 }
 
-// .login__box {
-// 	position: relative;
-// }
+.login__box {
+	flex: 1;
+}
 
 .login__btn {
 	// display: none;
@@ -28,11 +29,19 @@
 	font-size: 14px;
 	line-height: 24px;
 	color: #ffffff;
+	cursor: pointer;
+
+	&:hover {
+		background: #4e8839;
+		border: #4e8839;
+	}
 }
 
 .login__welcome {
 	display: flex;
 	flex-direction: column;
+	width: 300px;
+	margin: auto;
 	margin-bottom: 38px;
 	padding-top: 40px;
 	background: rgba(18,38,32, 0.6);
@@ -137,6 +146,11 @@
 	&--border {
 		border: none;
 	}
+
+
+	&:hover {
+		background: #4b813a;
+	}
 }
 
 .login__footer {
@@ -151,6 +165,7 @@
 	line-height: 24px;
 	text-align: center;
 	font-weight: 300;
+	color: #ffffff;
 }
 
 .login__form {
@@ -264,8 +279,9 @@
 	margin: 0px;
 	padding: 0px;
 	padding-bottom: 40px;
-	width: 768px;
+	width: 100%;
 	background: url("../img/loginback2.png") center top no-repeat;
+	background-size: cover;
 }
 
 .login__btn {
@@ -326,11 +342,11 @@
 @media (min-width: 1200px) {
 	
 .wrapper__login {
-	margin: 0px;
+	margin: 0px auto;
 	padding: 0px;
 	padding-bottom: 40px;
-	width: 1200px;
 	background: url("../img/loginback3.png") center top no-repeat;
+	background-size: cover;
 }	
 
 .login__btn {
@@ -357,6 +373,7 @@
 .wrapper__login {
 	width: 1800px;
 	background: url("../img/loginback4.png") center top no-repeat;
+	background-size: cover;
 }	
 
 .login__btn {

@@ -46,7 +46,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    padding-top: 140px;
+    padding-top: 135px;
     background: rgba(126,155,82, 0.87);
     z-index: 2;
   }
@@ -61,10 +61,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 10px;
-    width: 28px;
-    height: 4px;
+    top: 21px;
+    left: 6px;
+    width: 32px;
+    height: 3px;
     background-color: #ffffff;
   }
 
@@ -80,16 +80,17 @@
 .main-nav__link {
   display: block;
   position: relative;
+  margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 15px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 35px;
   line-height: 35px;
   font-family: "Sansus", arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 
   &:hover {
 
@@ -98,9 +99,9 @@
   	  position: absolute;
   	  bottom: 0px;
   	  left: 50%;
-  	  margin-left: -25px;
-  	  width: 50px;
-  	  height: 2px;
+  	  margin-left: -28px;
+  	  width: 56px;
+  	  height: 3px;
   	  background: #ffffff;
   	}
   }
@@ -182,6 +183,43 @@
 .main-nav {
   margin-bottom: 35px;
 }
+
+.main-nav__link {
+  margin-bottom: 60px;
+  font-size: 49px;
+  line-height: 49px;
+
+  &:hover {
+
+    &::before {
+      margin-left: -45px;
+      width: 90px;
+      height: 4px;
+    }
+  }
+}
+
+.main-nav__list {
+
+  &--opened {
+    padding-top: 176px;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+
+  &::before,
+  &::after {
+    top: 46px;
+    left: -33px;
+    width: 48px;
+    height: 4px;
+    border-radius: 1px;
+  }
+}
+
+
+
 }
 
 @media (min-width: 1200px) {
@@ -197,6 +235,38 @@
     margin-bottom: 0px;
   }
 }
+
+.main-nav--opened .main-nav__toggle {
+
+  &::before,
+  &::after {
+    top: 49px;
+  }
+}
+
+.main-nav__link {
+  margin-bottom: 44px;
+  font-size: 63px;
+  line-height: 63px;
+
+  &:hover {
+
+    &::before {
+      margin-left: -45px;
+      width: 90px;
+      height: 4px;
+    }
+  }
+}
+
+.main-nav__list {
+
+  &--opened {
+    padding-top: 238px;
+  }
+}
+
+
 }
 
 @media (min-width: 1800px) {
@@ -204,5 +274,15 @@
 .main-nav__toggle {
   top: 28px;
 }
+
+.main-nav--opened .main-nav__toggle {
+
+  &::before,
+  &::after {
+    top: 45px;
+  }
+}
+
+
 
 }

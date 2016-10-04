@@ -100,6 +100,22 @@
 .wrapper__blog {
 	display: flex;
 }
+
+.wrapper__title {
+
+	&--works {
+		margin-bottom: 35px;
+		padding-top: 40px;
+		padding-bottom: 26px;
+		font-size: 63px;
+		line-height: 63px;
+
+		&::before {
+			width: 90px;
+			margin-left: -47px;
+		}
+	}
+}
 }
 
 @media (min-width: 1800px) {

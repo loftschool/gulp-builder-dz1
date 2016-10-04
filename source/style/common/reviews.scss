@@ -269,3 +269,69 @@
 	padding-top: 5px;
 }
 }
+
+@media (min-width: 1200px) {
+
+.reviews {
+	padding-top: 25px;
+	background: url("../img/back-review3.png") center bottom no-repeat;
+}
+
+.reviews__title {
+	margin: 0 350px;
+	margin-bottom: 30px;
+	font-size: 63px;
+	line-height: 66px;
+	padding-bottom: 32px;
+}
+
+.reviews__text {
+	margin-bottom: 19px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.reviews__list {
+	margin-left: 200px;
+	margin-right: 190px;
+	font-size: 16px;
+}
+
+.reviews__quote {
+	margin-bottom: 14px;
+}
+
+.reviews__form {
+	margin-bottom: 156px;
+	width: 380px;
+}
+
+.reviews__input {
+	width: 302px;
+	font-size: 16px;
+}
+
+.reviews__textarea {
+	width: 302px;
+	font-size: 16px;
+}
+}
+
+@media (min-width: 1800px) {
+
+.reviews__title {
+	margin: 0 650px;
+	margin-bottom: 30px;
+}
+
+.reviews__list {
+	margin-left: 500px;
+	margin-right: 490px;
+}
+
+.reviews {
+	padding-top: 25px;
+	background: url("../img/back-review4.png") center bottom no-repeat;
+}
+
+}

@@ -1,5 +1,5 @@
 .page-header {
-	background: url('../img/bg.png') center 384px no-repeat,
+	background: linear-gradient(-170deg, transparent 576px, #ebefe2 577px), linear-gradient(170deg, transparent 576px, #ebefe2 577px),
 				url('../img/back.png') no-repeat;
 	min-height: 557px;
 }
@@ -98,7 +98,8 @@
 	display: flex;
 	flex-direction: column;
 	padding-top: 18px;
-	background: url('../img/bg2.png') center 331px no-repeat,
+	background: url('../img/portfolio.png') center 140px no-repeat,
+				linear-gradient(-170deg, transparent 563px, #ebefe2 564px), linear-gradient(170deg, transparent 563px, #ebefe2 564px),
 			    url('../img/back2.png') top center no-repeat; 
 	background-size: auto, cover;
 	min-height: 487px;
@@ -145,7 +146,8 @@
 .page-header {
 	display: flex;
 	flex-direction: column;
-	background: url('../img/bg3.png') center 427px no-repeat,
+	background: url('../img/portfolio1.png') center 120px no-repeat,
+				linear-gradient(-170deg, transparent 695px, #ebefe2 696px), linear-gradient(170deg, transparent 695px, #f4f5f0 696px),
 			    url('../img/back3.png') top center no-repeat; 
 	background-size: auto, cover;
 	min-height: 583px;
@@ -187,7 +189,8 @@
 .page-header {
 	display: flex;
 	flex-direction: column;
-	background: url('../img/bg4.png') center 427px no-repeat,
+	background:  url('../img/portfolio1.png') center 120px no-repeat,
+				linear-gradient(-170deg, transparent 747px, #ebefe2 748px), linear-gradient(170deg, transparent 747px, #f4f5f0 748px),
 			    url('../img/back4.png') top center no-repeat; 
 	background-size: auto, cover;
 	min-height: 583px;
@@ -195,7 +198,7 @@
 	&--blog {
 		min-height: 419px;
 		background: url('../img/bg4.png') center 263px no-repeat,
-			    	   url('../img/back4.png') center -165px no-repeat; 
+			    	url('../img/back4.png') center -165px no-repeat; 
 	}
 }
 }
