@@ -1,11 +1,11 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'Portfolio'
 
 block content
   .main-wrapper
-    header.page-header
+    header.page-header.page-header--works
       nav.main-nav.main-nav--closed
         ul.main-nav__social-list
           li.main-nav__social-item
@@ -72,8 +72,8 @@ block content
           input.reviews__input(type="email" placeholder="Email")
           textarea.reviews__textarea(placeholder="Ваше сообщение")
           div.reviews__btn-wrapper
-            button.reviews__btn Отправить
-            button.reviews__btn Очистить
+            button.reviews__btn(type="submit") Отправить
+            button.reviews__btn(type="reset") Очистить
         a.review__arrow(href="#") Ссылка вверх
 
         footer.main-footer.main-footer--reviews

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="186.861px" height="110.966px" viewBox="0 0 186.861 110.966" enable-background="new 0 0 186.861 110.966"
+	 xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="70.704" cy="105.783" r="5.182"/>
+	<circle fill="#FFFFFF" cx="5.183" cy="78.269" r="5.183"/>
+	<circle fill="#FFFFFF" cx="121.8" cy="63.519" r="2.848"/>
+	<circle fill="#FFFFFF" cx="48.859" cy="49.678" r="2.848"/>
+	<circle fill="#FFFFFF" cx="33.16" cy="17.826" r="2.848"/>
+	<circle fill="#FFFFFF" cx="87.597" cy="7.948" r="2.848"/>
+	<polygon fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="5.183,78.269 70.704,105.782 
+		121.801,63.519 	"/>
+	<polygon fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="33.16,17.825 5.183,78.269 
+		70.704,105.782 88.01,7.825 	"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" x1="48.859" y1="49.677" x2="121.801" y2="63.519"/>
+</g>
+<circle fill="#FFFFFF" cx="181.678" cy="93.211" r="5.182"/>
+<circle fill="#FFFFFF" cx="136.611" cy="5.184" r="5.183"/>
+<circle fill="#FFFFFF" cx="176.274" cy="27.121" r="2.848"/>
+<circle fill="#FFFFFF" cx="123.17" cy="79.005" r="2.848"/>
+<circle fill="#FFFFFF" cx="88.066" cy="73.644" r="2.848"/>
+<circle fill="#FFFFFF" cx="111.13" cy="23.354" r="2.848"/>
+<polygon fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="123.17,79.005 181.678,93.21 
+	176.274,27.12 "/>
+<polygon fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="88.065,73.644 136.611,5.183 
+	181.678,93.21 111.265,22.945 "/>
+<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" x1="123.169" y1="79.004" x2="176.274" y2="27.12"/>
+</svg>

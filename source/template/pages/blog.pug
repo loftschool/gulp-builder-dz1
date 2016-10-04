@@ -1,7 +1,7 @@
 extends ../_template
 
 block variables
-  - var title = 'Another page'
+  - var title = 'Blog'
 
 block content
   .main-wrapper
@@ -18,13 +18,13 @@ block content
           button.main-nav__toggle(type="button") Открыть меню
           ul.main-nav__list.main-nav__list--closed
             li.main-nav__item
-              a.main-nav__link(href="#") Мои работы
+              a.main-nav__link(href="works.html") Мои работы
             li.main-nav__item
-              a.main-nav__link(href="blog.html") Блог
+              a.main-nav__link Блог
             li.main-nav__item
-              a.main-nav__link(href="index.html") Обо мне
+              a.main-nav__link(href="about.html") Обо мне
             li.main-nav__item
-              a.main-nav__link(href="login.html") Авторизация
+              a.main-nav__link(href="index.html") Авторизация
       div.page-header__block
         div.page-header__box-img.page-header__box-img--blog
           img.page-header__img(src="assets/img/photo.jpg" alt="Картинка")
@@ -65,18 +65,17 @@ block content
       section.main-footer__map.main-footer__map--blog
         div.main-footer__box
           p.main-footer__desc Этот сайт я сделал в рамках обучения 
-            span в Школе  
-            span.main-footer__span онлайн образования LoftSchool.
+            span в Школе онлайн образования LoftSchool.
           div.main-footer__wrapper
             ul.main-footer__menu
               li.main-footer__menu-item
-                a.main-footer__menu-link(href="#") Мои работы
+                a.main-footer__menu-link(href="works.html") Мои работы
               li.main-footer__menu-item
-                a.main-footer__menu-link(href="#") Обо мне       
+                a.main-footer__menu-link(href="about.html") Обо мне       
               li.main-footer__menu-item
-                a.main-footer__menu-link(href="#") Блог
+                a.main-footer__menu-link Блог
               li.main-footer__menu-item
-                a.main-footer__menu-link(href="#") Авторизация
+                a.main-footer__menu-link(href="index.html") Авторизация
             ul.main-footer__social-list
               li.main-footer__social-item
                 a.main-footer__social-link.main-footer__social-link--vk(href="#") Vkontakte

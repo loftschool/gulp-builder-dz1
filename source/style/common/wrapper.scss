@@ -1,6 +1,6 @@
 .main-wrapper {
 	position: relative;
-	// margin: 0 auto;
+	margin: 0 auto;
 	width: 320px;
 }
 
@@ -32,6 +32,19 @@
 		color: #373e42;
 		font-family: "Sansus", arial, sans-serif;
 		font-weight: 400;
+		
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			left: 0px;
+			margin: 0 auto;
+			width: 253px;
+			height: 83px;
+			background: url("../img/works.png") no-repeat;
+		}
+
 
 		&::before {
 			content: "";
@@ -75,6 +88,13 @@
 			width: 90px;
 			margin-left: -55px;
 		}
+
+		&::after {
+			width: 404px;
+			height: 133px;
+			top: -30px;
+			background: url("../img/works1.png") no-repeat;
+		}
 	}
 }
 }
@@ -113,6 +133,13 @@
 		&::before {
 			width: 90px;
 			margin-left: -47px;
+		}
+
+		&::after {
+			width: 506px;
+			height: 165px;
+			top: -25px;
+			background: url("../img/works2.png") no-repeat;
 		}
 	}
 }

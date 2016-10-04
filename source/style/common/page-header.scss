@@ -2,6 +2,18 @@
 	background: linear-gradient(-170deg, transparent 576px, #ebefe2 577px), linear-gradient(170deg, transparent 576px, #ebefe2 577px),
 				url('../img/back.png') no-repeat;
 	min-height: 557px;
+
+	&--blog {
+		background: url("../img/blog-header1.png") center 257px no-repeat,
+					linear-gradient(-170deg, transparent 576px, #f8f9f5 577px), linear-gradient(170deg, transparent 576px, #f8f9f5 577px),
+			    	url('../img/back.png') no-repeat; 
+	}
+
+	&--works {
+	background: linear-gradient(-170deg, transparent 576px, #f8f9f5 577px), linear-gradient(170deg, transparent 576px, #f8f9f5 577px),
+				url('../img/back.png') no-repeat;
+	min-height: 557px;		
+	}
 }
 
 .page-header__list {
@@ -104,6 +116,18 @@
 	background-size: auto, cover;
 	min-height: 487px;
 	width: 100%;
+
+	&--blog {
+		background: url("../img/blog-header2.png") center 235px no-repeat,
+					linear-gradient(-170deg, transparent 563px, #f8f9f5 564px), linear-gradient(170deg, transparent 563px, #f8f9f5 564px),
+			    	url('../img/back2.png') top center no-repeat; 
+	}
+
+	&--works {
+		background: url('../img/portfolio.png') center 140px no-repeat,
+					linear-gradient(-170deg, transparent 563px, #f8f9f5 564px), linear-gradient(170deg, transparent 563px, #f8f9f5 564px),
+			        url('../img/back2.png') top center no-repeat; 		
+	}
 }
 
 .page-header__title {
@@ -154,8 +178,15 @@
 
 	&--blog {
 		min-height: 419px;
-		background: url('../img/bg3.png') center 263px no-repeat,
+		background: url("../img/blog-header3.png") center 192px no-repeat,
+					linear-gradient(-170deg, transparent 532px, #f8f9f5 533px), linear-gradient(170deg, transparent 532px, #f8f9f5 533px),
 			    	url('../img/back3.png') center -165px no-repeat; 
+	}
+
+	&--works {
+		background: url('../img/portfolio1.png') center 120px no-repeat,
+					linear-gradient(-170deg, transparent 695px, #f8f9f5 696px), linear-gradient(170deg, transparent 695px, #f8f9f5 696px),
+			        url('../img/back3.png') top center no-repeat; 		
 	}
 }
 
@@ -197,8 +228,15 @@
 
 	&--blog {
 		min-height: 419px;
-		background: url('../img/bg4.png') center 263px no-repeat,
+		background: url("../img/blog-header3.png") center 192px no-repeat,
+					linear-gradient(-170deg, transparent 586px, #f8f9f5 587px), linear-gradient(170deg, transparent 586px, #f8f9f5 587px),
 			    	url('../img/back4.png') center -165px no-repeat; 
+	}
+
+	&--works {
+	background: url('../img/portfolio1.png') center 120px no-repeat,
+				linear-gradient(-170deg, transparent 747px, #f8f9f5 748px), linear-gradient(170deg, transparent 747px, #f8f9f5 748px),
+			    url('../img/back4.png') top center no-repeat; 		
 	}
 }
 }
