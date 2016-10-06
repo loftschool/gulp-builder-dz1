@@ -1,27 +1,30 @@
-.wrapper__login {
+.login {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	margin: 0 auto;
-	padding: 0 10px;
 	padding-bottom: 10px;
-	width: 100%;
-	min-height: 100vh;
-	background: url("../img/loginback.png") center top no-repeat;
+	height: 100%;
+	background: url("../img/loginback2.png") no-repeat;
+	background-position: center top;
 	background-size: cover;
 }
 
 .login__box {
-	flex: 1;
+	flex: 1 0 auto;
+}
+
+.login__btn-box {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .login__btn {
-	// display: none;
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 35px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 	width: 146px;
-	height: 40px;
 	border-radius: 20px;
 	border: 1px solid #ffffff;
 	background: none;
@@ -33,7 +36,7 @@
 
 	&:hover {
 		background: #4e8839;
-		border: #4e8839;
+		border-color: #4e8839;
 	}
 }
 
@@ -82,10 +85,12 @@
 
 .login__list {
 	display: flex;
+	justify-content: center;
 	margin: 0px auto;
 	margin-bottom: 41px;
 	padding: 0px;
 	font-size: 0px;
+	list-style: none;
 }
 
 .login__item {
@@ -100,21 +105,8 @@
 	display: block;
 	width: 31px;
 	line-height: 22px;
-	background: red;
 	cursor: pointer;
 	text-decoration: none;
-
-	&--vk {
-		background: url("../img/icons/vk2.png") center center no-repeat;
-	}
-
-	&--github {
-		background: url("../img/icons/github2.png") center center no-repeat;
-	}
-
-	&--in {
-		background: url("../img/icons/in2.png") center center no-repeat;
-	}
 }
 
 .login__menu {
@@ -156,6 +148,7 @@
 .login__footer {
 	display: flex;
 	flex-direction: column;
+	flex: 0 0 auto;
 }
 
 .login__footer-text {
@@ -273,15 +266,30 @@
   display: none;
 }
 
+.login__svg {
+	fill: #ffffff;
+	width: 31px;
+	height: 20px;
+	
+	&:hover {
+		fill: #4b813a;
+	}
+}
+
+
 @media (min-width: 768px) {
 
-.wrapper__login {
-	margin: 0px;
-	padding: 0px;
+.login {
+	height: 100%;
 	padding-bottom: 40px;
-	width: 100%;
-	background: url("../img/loginback2.png") center top no-repeat;
+	background: url("../img/loginback3.png") no-repeat;
+	background-position: center top;
 	background-size: cover;
+}
+
+.login__btn-box {
+	margin-left: auto;
+	margin-right: 0px;
 }
 
 .login__btn {
@@ -289,7 +297,7 @@
 	margin-right: 20px;
 	margin-top: 20px;
 	margin-left: auto;
-	margin-bottom: 211px;
+	margin-bottom: 155px;
 	padding: 0 16px;
 	width: 180px;
 	height: 45px;
@@ -299,9 +307,7 @@
 }
 
 .login__welcome {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 294px;
+	// margin-bottom: 294px;
 	width: 348px;
 }
 
@@ -337,16 +343,22 @@
 	font-weight: 400;
 	color: #ffffff;
 }
+
+// .login__box {
+// 	// flex: 1 0 auto;
+// }
 }
 
 @media (min-width: 1200px) {
 	
-.wrapper__login {
+.login {
 	margin: 0px auto;
 	padding: 0px;
+	height: 100%;
 	padding-bottom: 40px;
-	background: url("../img/loginback3.png") center top no-repeat;
-	background-size: cover;
+	background: url("../img/loginback4.png") no-repeat;
+	background-position: center top;
+	background-size: cover
 }	
 
 .login__btn {
@@ -370,10 +382,12 @@
 
 @media (min-width: 1800px) {
 
-.wrapper__login {
-	width: 1800px;
-	background: url("../img/loginback4.png") center top no-repeat;
-	background-size: cover;
+.login {
+	// width: 1800px;
+	height: 100%;
+	background: url("../img/loginback4.png") no-repeat;
+	background-position: center top;
+	background-size: cover
 }	
 
 .login__btn {

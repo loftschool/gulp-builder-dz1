@@ -4,8 +4,9 @@ block variables
   - var title = 'Login page'
 
 block content
-  div.wrapper__login
-    button.login__btn Авторизоваться
+  div.login
+    div.login__btn-box
+      button.login__btn Авторизоваться
     div.login__box
       form.login__welcome
         div.login__box-img
@@ -14,11 +15,17 @@ block content
         p.login__desc Личный сайт веб разработчика
         ul.login__list
           li.login__item
-            a.login__link.login__link--vk(href="#") Вконтакте
+            a.login__link(href="#") Вконтакте
+              svg.login__svg
+                use(xlink:href="assets/img/sprite.svg#vk")
           li.login__item
-            a.login__link.login__link--github(href="#") Гитхаб
+            a.login__link(href="#") Гитхаб
+              svg.login__svg
+                use(xlink:href="assets/img/sprite.svg#github")
           li.login__item
-            a.login__link.login__link--in(href="#") Инстраграмм
+            a.login__link(href="#") Инстраграмм
+              svg.login__svg
+                use(xlink:href="assets/img/sprite.svg#in")
         ul.login__menu
           li.login__menu-item
             a.login__menu-link(href="works.html") Мои работы
@@ -26,7 +33,6 @@ block content
             a.login__menu-link(href="about.html") Обо мне
           li.login__menu-item
             a.login__menu-link.login__menu-link--border(href="blog.html") Блог
-      
       form.login__form
         h2.login__form-title Авторизуйтесь
         input.login__input-text(type="text" placeholder="Логин")
@@ -42,7 +48,6 @@ block content
           label Не уверен
         a(href="#") На главную
         a(href="#") Войти
-    
     footer.login__footer
       p.login__footer-text &copy; Елисеев Максим
       p.login__footer-text 

@@ -20,10 +20,6 @@
         mainlist.classList.remove('main-nav__list--opened');
       }
     });
-
-  setTimeout(function() {
-    document.querySelector('.greating_picture').classList.add('m--show');
-  }, 1000);
 })();
 
 

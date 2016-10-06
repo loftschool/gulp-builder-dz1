@@ -6,14 +6,25 @@ block variables
 block content
   .main-wrapper
     header.page-header.page-header--blog
+      svg.page-header__bg-right.page-header__bg-right--blog
+        use(xlink:href="assets/img/sprite.svg#polygon")
+      svg.page-header__bg-left.page-header__bg-left--blog
+        use(xlink:href="assets/img/sprite.svg#polygon2")
       nav.main-nav.main-nav--closed.main-nav--blog
         ul.main-nav__social-list
           li.main-nav__social-item
-            a.main-nav__social-link.main-nav__social-link--vk(href="#") Vkontakte
-          li.main-nav__social-item 
-            a.main-nav__social-link.main-nav__social-link--git(href="#") Github
+            a.main-nav__social-link(href="#") Vkontakte
+              svg.main-nav__svg
+                use(xlink:href="assets/img/sprite.svg#vk")
+          li.main-nav__so
+            cial-item 
+            a.main-nav__social-link(href="#") Github
+              svg.main-nav__svg
+                use(xlink:href="assets/img/sprite.svg#github")
           li.main-nav__social-item
-            a.main-nav__social-link.main-nav__social-link--in(href="#") Instagram
+            a.main-nav__social-link(href="#") Instagram
+              svg.main-nav__svg
+                use(xlink:href="assets/img/sprite.svg#in")
         div.main-nav__wrapper
           button.main-nav__toggle(type="button") Открыть меню
           ul.main-nav__list.main-nav__list--closed
@@ -31,6 +42,8 @@ block content
         h1.page-header__title.page-header__title--blog Блог
         p.page-header__desc.page-header__desc--blog Статьи, которые я написал
       a.page-header__arrow.page-header__arrow--blog(href="#") Ссылка вниз
+        svg.page-header__arrow-svg
+          use(xlink:href="assets/img/sprite.svg#arrow_down")     
 
   
     main.wrapper__blog
@@ -78,11 +91,17 @@ block content
                 a.main-footer__menu-link(href="index.html") Авторизация
             ul.main-footer__social-list
               li.main-footer__social-item
-                a.main-footer__social-link.main-footer__social-link--vk(href="#") Vkontakte
+                a.main-footer__social-link(href="#") Vkontakte
+                  svg.main-footer__social-vk
+                    use(xlink:href="assets/img/sprite.svg#vk")
               li.main-footer__social-item
-                a.main-footer__social-link.main-footer__social-link--git(href="#") Twitter   
+                a.main-footer__social-link(href="#") Twitter
+                  svg.main-footer__social-git
+                    use(xlink:href="assets/img/sprite.svg#github")
               li.main-footer__social-item
-                a.main-footer__social-link.main-footer__social-link--in(href="#") Instagramm
+                a.main-footer__social-link(href="#") Instagramm
+                  svg.main-footer__social-in
+                    use(xlink:href="assets/img/sprite.svg#in")
           div.main-footer__quote-wrapper
             blockquote.main-footer__quote Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете
             scite.main-footer__quote-author &#8212; Martin Golding

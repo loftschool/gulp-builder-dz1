@@ -1,5 +1,8 @@
 .reviews {
-	background: url("../img/back-review.png") center bottom no-repeat;
+	display: flex;
+	flex-direction: column;
+	background: url("../img/back-review2.png") center bottom no-repeat;
+	background-size: cover;
 }
 
 
@@ -33,6 +36,8 @@
 }
 
 .reviews__item {
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 32px;
 }
 
@@ -58,10 +63,13 @@
 }
 
 .reviews__text {
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 14px;
 	line-height: 24px;
+	width: 320px;
 }
 
 .reviews__quote {
@@ -91,10 +99,13 @@
 
 .reviews__form {
 	margin: 0 10px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 40px;
 	padding-top: 13px;
 	background: rgba(224, 224, 220, 0.6);
 	border-radius: 4px;
+	width: 320px;
 }
 
 .reviews__form-title {
@@ -182,7 +193,7 @@
 @media (min-width: 768px) {
 
 .reviews {
-	background: url("../img/back-review2.png") center bottom no-repeat;
+	background: url("../img/back-review3.png") center bottom no-repeat;
 }
 
 .reviews__title {
@@ -275,6 +286,7 @@
 .reviews {
 	padding-top: 25px;
 	background: url("../img/back-review3.png") center bottom no-repeat;
+	background-size: cover;
 }
 
 .reviews__title {

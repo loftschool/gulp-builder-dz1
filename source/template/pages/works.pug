@@ -6,6 +6,10 @@ block variables
 block content
   .main-wrapper
     header.page-header.page-header--works
+      svg.page-header__bg-right.page-header__bg-right--works
+        use(xlink:href="assets/img/sprite.svg#polygon")
+      svg.page-header__bg-left.page-header__bg-left--works
+        use(xlink:href="assets/img/sprite.svg#polygon2")
       nav.main-nav.main-nav--closed
         ul.main-nav__social-list
           li.main-nav__social-item
@@ -24,7 +28,7 @@ block content
             li.main-nav__item
               a.main-nav__link(href="about.html") Обо мне
             li.main-nav__item
-              a.main-nav__link(href="login.html") Авторизация
+              a.main-nav__link(href="index.html") Авторизация
       div.page-header__block
         div.page-header__box-img
           img.page-header__img(src="assets/img/photo.jpg" alt="Картинка")
@@ -43,6 +47,7 @@ block content
         div.slider__list
           div.slider__toggle.slider__toggle--up
           div.slider__toggle.slider__toggle--down
+
       section.reviews
         h2.reviews__title Что обо мне говорят
         ul.reviews__list
@@ -79,8 +84,7 @@ block content
         footer.main-footer.main-footer--reviews
           div.main-footer__box
             p.main-footer__desc Этот сайт я сделал в рамках обучения 
-              span в Школе  
-              span.main-footer__span онлайн образования LoftSchool.
+              span в Школе онлайн образования LoftSchool.
             div.main-footer__wrapper
               ul.main-footer__menu
                 li.main-footer__menu-item
@@ -93,11 +97,17 @@ block content
                   a.main-footer__menu-link(href="#") Авторизация
               ul.main-footer__social-list
                 li.main-footer__social-item
-                  a.main-footer__social-link.main-footer__social-link--vk(href="#") Vkontakte
+                  a.main-footer__social-link(href="#") Vkontakte
+                    svg.main-footer__social-vk
+                      use(xlink:href="assets/img/sprite.svg#vk")
                 li.main-footer__social-item
-                  a.main-footer__social-link.main-footer__social-link--git(href="#") Twitter   
+                  a.main-footer__social-link(href="#") Twitter
+                    svg.main-footer__social-git
+                      use(xlink:href="assets/img/sprite.svg#github")
                 li.main-footer__social-item
-                  a.main-footer__social-link.main-footer__social-link--in(href="#") Instagramm
+                  a.main-footer__social-link(href="#") Instagramm
+                    svg.main-footer__social-in
+                      use(xlink:href="assets/img/sprite.svg#in")
             div.main-footer__quote-wrapper
               blockquote.main-footer__quote Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете
               scite.main-footer__quote-author &#8212; Martin Golding

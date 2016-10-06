@@ -38,11 +38,11 @@
   list-style: none;
 
   &--opened {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -60,9 +60,9 @@
   &::before,
   &::after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 21px;
-    left: 6px;
+    right: 6px;
     width: 32px;
     height: 3px;
     background-color: #ffffff;
@@ -121,17 +121,15 @@
   width: 24px;
   height: 21px;
   margin-right: 26px;
+}
 
-  &--vk {
-  	background: url("../img/icons/vk1.png") center center no-repeat;
-  }
+.main-nav__svg {
+  fill: #ffffff;
+  width: 24px;
+  height: 21px;
 
-  &--git {
-  	background: url("../img/icons/github1.png") center center no-repeat;
-  }
-
-  &--in {
-  	background: url("../img/icons/in1.png") center center no-repeat;
+  &:hover {
+    fill: #487e38;
   }
 }
 
@@ -149,17 +147,15 @@
   width: 31px;
   height: 22px;
   margin-right: 24px;
+}
 
-  &--vk {
-  	background: url("../img/icons/vk2.png") center center no-repeat;
-  }
+.main-nav__svg {
+  fill: #ffffff;
+  width: 31px;
+  height: 22px;
 
-  &--git {
-  	background: url("../img/icons/github2.png") center center no-repeat;
-  }
-
-  &--in {
-  	background: url("../img/icons/in2.png") center center no-repeat;
+  &:hover {
+    fill: #487e38;
   }
 }
 
@@ -211,7 +207,7 @@
   &::before,
   &::after {
     top: 46px;
-    left: -33px;
+    right: 25px;
     width: 48px;
     height: 4px;
     border-radius: 1px;
@@ -240,6 +236,9 @@
 
   &::before,
   &::after {
+    position: fixed;
+    margin: 0 auto;
+    margin-left: auto;
     top: 49px;
   }
 }
@@ -261,12 +260,12 @@
 
 .main-nav__list {
 
+
   &--opened {
-    padding-top: 238px;
+    width: 100%;
+    height: 100%;
   }
 }
-
-
 }
 
 @media (min-width: 1800px) {
@@ -279,10 +278,26 @@
 
   &::before,
   &::after {
+    position: fixed;
+    left: 1730px;
+    top: 0px;
+    margin: 0 auto;
     top: 45px;
   }
 }
 
+.main-nav__list {
 
+
+  &--opened {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1800px;
+    
+  }
+}
 
 }
