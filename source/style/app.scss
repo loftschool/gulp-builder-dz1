@@ -6,6 +6,7 @@ html {
   background: #939393;
 }
 
+@import 'common/mixins';
 @import 'common/greating';
 @import 'common/page-header';
 @import 'common/main-nav';
@@ -18,3 +19,4 @@ html {
 @import 'common/login';
 @import 'common/slider';
 @import 'common/reviews';
+@import 'common/preloader';
