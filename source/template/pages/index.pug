@@ -1,7 +1,70 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'Login page'
 
 block content
-  include ../common/_greating
+  div.login
+    div.login__btn-box
+      button.login__btn#login-flip Авторизоваться
+    section.login__container
+      div.login__box#login-card
+        form.login__welcome
+          div.login__box-img
+            img.login__img(src="assets/img/photo.jpg" alt="Картинка")
+          h1.login__title Елисеев Максим      
+          p.login__desc Личный сайт веб разработчика
+          ul.login__list
+            li.login__item
+              a.login__link(href="#") Вконтакте
+                svg.login__svg
+                  use(xlink:href="assets/img/sprite.svg#vk")
+            li.login__item
+              a.login__link(href="#") Гитхаб
+                svg.login__svg
+                  use(xlink:href="assets/img/sprite.svg#github")
+            li.login__item
+              a.login__link(href="#") Инстраграмм
+                svg.login__svg
+                  use(xlink:href="assets/img/sprite.svg#in")
+          ul.login__menu
+            li.login__menu-item
+              a.login__menu-link.login__menu-link--radius(href="works.html") Мои работы
+            li.login__menu-item
+              a.login__menu-link(href="about.html") Обо мне
+            li.login__menu-item
+              a.login__menu-link.login__menu-link--border(href="blog.html") Блог
+        form.login__form#login-form
+          h2.login__form-title Авторизуйтесь
+          input.login__input-text(type="text" placeholder="Логин")
+          input.login__input-text(type="text" placeholder="Пароль")
+          label.login__checkbox
+            input.login__input-checkbox(type="checkbox") 
+            span.login__checkbox-indicator
+            | Я человек
+          div.login__radio-box
+            p.login__question Вы точно не робот?
+            label.login__radio(for="radio-filter-1")
+              input.login__input-radio#radio-filter-1(type="radio" name="radio") 
+              span.login__radio-indicator
+              span.login__text Да
+            label.login__radio.login__radio--margin(for="radio-filter-2")
+              input.login__input-radio#radio-filter-2(type="radio" name="radio") 
+              span.login__radio-indicator
+              span.login__text Не уверен
+          ul.login__menu
+            li.login__menu-item
+              a.login__menu-link.login__menu-link--form.login__menu-link--radius#login-flip2(href="#") На главную
+            li.login__menu-item
+              a.login__menu-link.login__menu-link--form.login__menu-link--border(href="#") Войти
+
+    footer.login__footer
+      p.login__footer-text &copy; Елисеев Максим
+      p.login__footer-text 
+        span |
+        |  cоздано с любовью в LoftSchool | 2016
+
+  div.preloader
+    div.preloader__spinner
+      div.preloader__animation
+      div.preloader__percents 0%

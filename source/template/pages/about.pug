@@ -1,0 +1,174 @@
+extends ../_template
+
+block variables
+  - var title = 'About me'
+
+block content
+  .main-wrapper
+    header.page-header
+      svg.page-header__bg-right
+        use(xlink:href="assets/img/sprite.svg#polygon")
+      svg.page-header__bg-left
+        use(xlink:href="assets/img/sprite.svg#polygon2") 
+      nav.main-nav.main-nav--closed
+        ul.main-nav__social-list
+          li.main-nav__social-item
+            a.main-nav__social-link(href="#") Vkontakte
+              svg.main-nav__svg
+                use(xlink:href="assets/img/sprite.svg#vk")
+          li.main-nav__social-item 
+            a.main-nav__social-link(href="#") Github
+              svg.main-nav__svg
+                use(xlink:href="assets/img/sprite.svg#github")
+          li.main-nav__social-item
+            a.main-nav__social-link(href="#") Instagram
+              svg.main-nav__svg
+                use(xlink:href="assets/img/sprite.svg#in")
+
+        div.main-nav__wrapper
+          button.main-nav__toggle(type="button") Открыть меню
+          ul.main-nav__list.main-nav__list--closed
+            li.main-nav__item
+              a.main-nav__link(href="works.html") Мои работы
+            li.main-nav__item
+              a.main-nav__link(href="blog.html") Блог
+            li.main-nav__item
+              a.main-nav__link Обо мне
+            li.main-nav__item
+              a.main-nav__link(href="index.html") Авторизация
+      div.page-header__block
+        div.page-header__box-img
+          img.page-header__img(src="assets/img/photo.jpg" alt="Картинка")
+        h1.page-header__title Елисеев Максим
+        p.page-header__desc Личный сайт веб разработчика
+      a.page-header__arrow(href="#") Ссылка вниз
+        svg.page-header__arrow-svg
+          use(xlink:href="assets/img/sprite.svg#arrow_down")
+
+    main.wrapper.wrapper--about
+      section.about-me
+        div.about-me__info
+          h2.about-me__title.about-me__title--about Обо мне
+          div.about-me__box-img
+            picture
+              source(media="(min-width: 768px)" srcset="assets/img/photo2.jpg" alt="Картинка")
+              img.wrapper__img(src="assets/img/photo1.jpg" alt="Картинка")
+        div.about-me__info.about-me__info--margin
+          h2.about-me__title.about-me__title--size Кто я
+          p.about-me__text.about-me__text--margin Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+          p.about-me__text.about-me__text--margin2 Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, 
+            span как тут всё классно и красиво!
+      section.information
+        h3.information__title Чем я могу быть вам полезен
+        p.information__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+        ul.information__property-list
+          li.information__property
+            h3.informtion__property-title Frontend
+            ul.information__property-type
+              li.information__type
+                span.information__technologies-type HTML5
+                div.information__technologies-semiricle
+                div.information__technologies-semiricle.information__technologies-semiricle--html
+              li.information__type
+                span.information__technologies-type CSS3
+                div.information__technologies-semiricle
+                div.information__technologies-semiricle.information__technologies-semiricle--css
+              li.information__type
+                span.information__technologies-type JavaScript & jQuery
+                div.information__technologies-semiricle
+                div.information__technologies-semiricle.information__technologies-semiricle--less.information__technologies-semiricle--js
+            ul.information__property-type.information__property-type--margin
+              li.information__property
+                h3.informtion__property-title Backend
+                ul.information__property-type
+                  li.information__type 
+                    span.information__technologies-type PHP
+                    div.information__technologies-semiricle
+                    div.information__technologies-semiricle.information__technologies-semiricle--less.information__technologies-semiricle--php
+                  li.information__type 
+                    span.information__technologies-type msSQL
+                    div.information__technologies-semiricle
+                    div.information__technologies-semiricle.information__technologies-semiricle--less.information__technologies-semiricle--mssql
+                  li.information__type 
+                    span.information__technologies-type Node.js & npm
+                    div.information__technologies-semiricle
+                    div.information__technologies-semiricle.information__technologies-semiricle--less.information__technologies-semiricle--nodejs
+                  li.information__type 
+                    span.information__technologies-type Mongo.db
+                    div.information__technologies-semiricle
+                    div.information__technologies-semiricle.information__technologies-semiricle--less.information__technologies-semiricle--mongo
+            ul.information__property-type.information__property-type--margin
+              li.information__property
+                h3.informtion__property-title WorkFlow
+                ul.information__property-type
+                  li.information__type 
+                    span.information__technologies-type Git
+                    div.information__technologies-semiricle
+                    div.information__technologies-semiricle.information__technologies-semiricle--less.information__technologies-semiricle--git
+                  li.information__type 
+                    span.information__technologies-type Gulp
+                    div.information__technologies-semiricle
+                    div.information__technologies-semiricle.information__technologies-semiricle--less.information__technologies-semiricle--gulp
+                  li.information__type 
+                    span.information__technologies-type Bower
+                    div.information__technologies-semiricle
+                    div.information__technologies-semiricle.information__technologies-semiricle--less.information__technologies-semiricle--bower
+      
+    footer.main-footer
+      section.main-footer__map
+        div.main-footer__map-wrapper
+          h3.main-footer__map-title Контакты
+          ul.main-footer__map-list
+            li.main-footer__map-item
+              svg.main-footer__item-svg.main-footer__item-svg--skype
+                use(xlink:href="assets/img/sprite.svg#skype")
+              | skype_kdn
+            li.main-footer__map-item 
+              svg.main-footer__item-svg.main-footer__item-svg--envelop
+                use(xlink:href="assets/img/sprite.svg#envelope2")
+              | astahov@gmail.com
+            li.main-footer__map-item 
+              svg.main-footer__item-svg.main-footer__item-svg--phone
+                use(xlink:href="assets/img/sprite.svg#phone")
+              | +7 931 200 93 24
+            li.main-footer__map-item
+              svg.main-footer__item-svg.main-footer__item-svg--marker
+                use(xlink:href="assets/img/sprite.svg#map_marker")
+              | Новосибирск, ул. Инская, д.14
+        div.main-footer__box.main-footer__box--reviews
+          p.main-footer__desc Этот сайт я сделал в рамках обучения 
+            span в Школе онлайн образования LoftSchool.
+          div.main-footer__wrapper
+            ul.main-footer__menu
+              li.main-footer__menu-item
+                a.main-footer__menu-link(href="works.html") Мои работы
+              li.main-footer__menu-item
+                a.main-footer__menu-link Обо мне       
+              li.main-footer__menu-item
+                a.main-footer__menu-link(href="blog.html") Блог
+              li.main-footer__menu-item
+                a.main-footer__menu-link(href="login.html") Авторизация
+            ul.main-footer__social-list
+              li.main-footer__social-item
+                a.main-footer__social-link(href="#") Vkontakte
+                  svg.main-footer__social-vk
+                    use(xlink:href="assets/img/sprite.svg#vk")
+              li.main-footer__social-item
+                a.main-footer__social-link(href="#") Twitter
+                  svg.main-footer__social-git
+                    use(xlink:href="assets/img/sprite.svg#github")
+              li.main-footer__social-item
+                a.main-footer__social-link(href="#") Instagramm
+                  svg.main-footer__social-in
+                    use(xlink:href="assets/img/sprite.svg#in")
+          div.main-footer__quote-wrapper
+            blockquote.main-footer__quote Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете
+            cite.main-footer__quote-author &#8212; Martin Golding
+        div.main-footer__copyright
+          p.main-footer__copyright-text &copy; Елисеев Максим
+          p.main-footer__copyright-text | Создано с любовью в LoftSchool | 2016
+
+  div.preloader
+    div.preloader__spinner
+      div.preloader__animation
+      div.preloader__percents 0%

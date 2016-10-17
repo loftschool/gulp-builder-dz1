@@ -1,0 +1,127 @@
+extends ../_template
+
+block variables
+  - var title = 'Portfolio'
+
+block content
+  .main-wrapper
+    header.page-header.page-header--works
+      svg.page-header__bg-right.page-header__bg-right--works
+        use(xlink:href="assets/img/sprite.svg#polygon")
+      svg.page-header__bg-left.page-header__bg-left--works
+        use(xlink:href="assets/img/sprite.svg#polygon2")
+      nav.main-nav.main-nav--closed
+        ul.main-nav__social-list
+          li.main-nav__social-item
+            a.main-nav__social-link.main-nav__social-link--vk(href="#") Vkontakte
+          li.main-nav__social-item 
+            a.main-nav__social-link.main-nav__social-link--git(href="#") Github
+          li.main-nav__social-item
+            a.main-nav__social-link.main-nav__social-link--in(href="#") Instagram
+        div.main-nav__wrapper
+          button.main-nav__toggle(type="button") Открыть меню
+          ul.main-nav__list.main-nav__list--closed
+            li.main-nav__item
+              a.main-nav__link Мои работы
+            li.main-nav__item
+              a.main-nav__link(href="blog.html") Блог
+            li.main-nav__item
+              a.main-nav__link(href="about.html") Обо мне
+            li.main-nav__item
+              a.main-nav__link(href="index.html") Авторизация
+      div.page-header__block
+        div.page-header__box-img
+          img.page-header__img(src="assets/img/photo.jpg" alt="Картинка")
+        h1.page-header__title Елисеев Максим
+        p.page-header__desc Личный сайт веб разработчика
+      a.page-header__arrow(href="#") Ссылка вниз  
+  
+    main.wrapper.wrapper--works
+      h2.wrapper__title.wrapper__title--works Мои работы
+      section.slider
+        div.slider__img-box
+        div.slider__work-name
+          h2.slider__work-title Сайт школы онлайн образования
+          p.slider__work-desc html, css, javascript
+          a.slider__link(href="#") Посмотреть сайт
+        div.slider__list
+          div.slider__toggle.slider__toggle--up
+          div.slider__toggle.slider__toggle--down
+
+      section.reviews
+        h2.reviews__title Что обо мне говорят
+        ul.reviews__list
+          li.reviews__item
+            div.reviews__img-box
+              picture
+                source(media="(min-width: 768px)" srcset="assets/img/quote2.jpg" alt="Картинка")
+                img.reviews__img(src="assets/img/quote1.jpg" alt="Картинка")
+            div.reviews__text
+              blockquote.reviews__quote Этот парень проходил обучение 
+                span веб-разработке не где-то, а в LoftSchool! 2 
+                | месяца только самых тяжелых испытаний и бессонных ночей!
+              cite.rewies__author Ковальчук Дмитрий 
+                span &#8212; основатель LoftSchool
+          li.reviews__item
+            div.reviews__img-box.reviews__img-box--foto
+              picture
+                source(media="(min-width: 768px)" srcset="assets/img/quote2-1.jpg" alt="Картинка")
+                img.reviews__img.reviews__img--foto(src="assets/img/quote1-1.jpg" alt="Картинка")
+            div.reviews__text
+              blockquote.reviews__quote Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+              cite.rewies__author Зар Захаров 
+                span &#8212; преподаватель
+        form.reviews__form
+          h3.reviews__form-title Связаться со мной
+          input.reviews__input(type="text" placeholder="Имя")
+          input.reviews__input(type="email" placeholder="Email")
+          textarea.reviews__textarea(placeholder="Ваше сообщение")
+          div.reviews__btn-wrapper
+            button.reviews__btn(type="submit") Отправить
+            button.reviews__btn(type="reset") Очистить
+        a.review__arrow(href="#") Ссылка вверх
+
+        footer.main-footer.main-footer--reviews
+          div.main-footer__box
+            p.main-footer__desc Этот сайт я сделал в рамках обучения 
+              span в Школе онлайн образования LoftSchool.
+            div.main-footer__wrapper
+              ul.main-footer__menu
+                li.main-footer__menu-item
+                  a.main-footer__menu-link(href="#") Мои работы
+                li.main-footer__menu-item
+                  a.main-footer__menu-link(href="#") Обо мне       
+                li.main-footer__menu-item
+                  a.main-footer__menu-link(href="#") Блог
+                li.main-footer__menu-item
+                  a.main-footer__menu-link(href="#") Авторизация
+              ul.main-footer__social-list
+                li.main-footer__social-item
+                  a.main-footer__social-link(href="#") Vkontakte
+                    svg.main-footer__social-vk
+                      use(xlink:href="assets/img/sprite.svg#vk")
+                li.main-footer__social-item
+                  a.main-footer__social-link(href="#") Twitter
+                    svg.main-footer__social-git
+                      use(xlink:href="assets/img/sprite.svg#github")
+                li.main-footer__social-item
+                  a.main-footer__social-link(href="#") Instagramm
+                    svg.main-footer__social-in
+                      use(xlink:href="assets/img/sprite.svg#in")
+            div.main-footer__quote-wrapper
+              blockquote.main-footer__quote Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете
+              scite.main-footer__quote-author &#8212; Martin Golding
+          div.main-footer__copyright.main-footer__copyright--reviews
+            p.main-footer__copyright-text &copy; Елисеев Максим
+            p.main-footer__copyright-text | Создано с любовью в LoftSchool | 2016
+
+  div.preloader
+    div.preloader__spinner
+      div.preloader__animation
+      div.preloader__percents 0%
+    
+
+
+
+
+      
