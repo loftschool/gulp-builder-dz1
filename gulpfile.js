@@ -10,7 +10,7 @@ global.$ = {
     app: require('./gulp/paths/app.js')
   },
   gulp: require('gulp'),
-  rimraf: require('rimraf'),
+  del: require('del'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()
 };
