@@ -1,4 +1,4 @@
-#Учебная сборка Loftschool (выпускной проект №1) 
+#Учебная сборка Loftschool
 
 Stack:
  - Gulp 4.0

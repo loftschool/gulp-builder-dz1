@@ -4,7 +4,6 @@
   "author": "a.kalin",
   "license": "ISC",
   "scripts": {
-    "postinstall": "bower install"
   },
   "devDependencies": {
     "browser-sync": "2.11.2",
