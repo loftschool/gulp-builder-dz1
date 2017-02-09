@@ -1,0 +1,211 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$-digg-01-32-name: 'Digg-01-32';
+$-digg-01-32-x: 32px;
+$-digg-01-32-y: 0px;
+$-digg-01-32-offset-x: -32px;
+$-digg-01-32-offset-y: 0px;
+$-digg-01-32-width: 32px;
+$-digg-01-32-height: 32px;
+$-digg-01-32-total-width: 128px;
+$-digg-01-32-total-height: 96px;
+$-digg-01-32-image: 'sprite.png';
+$-digg-01-32: (32px, 0px, -32px, 0px, 32px, 32px, 128px, 96px, 'sprite.png', 'Digg-01-32', );
+$-ebay-32-name: 'Ebay-32';
+$-ebay-32-x: 0px;
+$-ebay-32-y: 64px;
+$-ebay-32-offset-x: 0px;
+$-ebay-32-offset-y: -64px;
+$-ebay-32-width: 32px;
+$-ebay-32-height: 32px;
+$-ebay-32-total-width: 128px;
+$-ebay-32-total-height: 96px;
+$-ebay-32-image: 'sprite.png';
+$-ebay-32: (0px, 64px, 0px, -64px, 32px, 32px, 128px, 96px, 'sprite.png', 'Ebay-32', );
+$-facebook-32-name: 'Facebook-32';
+$-facebook-32-x: 0px;
+$-facebook-32-y: 32px;
+$-facebook-32-offset-x: 0px;
+$-facebook-32-offset-y: -32px;
+$-facebook-32-width: 32px;
+$-facebook-32-height: 32px;
+$-facebook-32-total-width: 128px;
+$-facebook-32-total-height: 96px;
+$-facebook-32-image: 'sprite.png';
+$-facebook-32: (0px, 32px, 0px, -32px, 32px, 32px, 128px, 96px, 'sprite.png', 'Facebook-32', );
+$-google-32-name: 'Google-32';
+$-google-32-x: 32px;
+$-google-32-y: 32px;
+$-google-32-offset-x: -32px;
+$-google-32-offset-y: -32px;
+$-google-32-width: 32px;
+$-google-32-height: 32px;
+$-google-32-total-width: 128px;
+$-google-32-total-height: 96px;
+$-google-32-image: 'sprite.png';
+$-google-32: (32px, 32px, -32px, -32px, 32px, 32px, 128px, 96px, 'sprite.png', 'Google-32', );
+$-linked-in-32-name: 'LinkedIn-32';
+$-linked-in-32-x: 64px;
+$-linked-in-32-y: 0px;
+$-linked-in-32-offset-x: -64px;
+$-linked-in-32-offset-y: 0px;
+$-linked-in-32-width: 32px;
+$-linked-in-32-height: 32px;
+$-linked-in-32-total-width: 128px;
+$-linked-in-32-total-height: 96px;
+$-linked-in-32-image: 'sprite.png';
+$-linked-in-32: (64px, 0px, -64px, 0px, 32px, 32px, 128px, 96px, 'sprite.png', 'LinkedIn-32', );
+$-pinterest-32-name: 'Pinterest-32';
+$-pinterest-32-x: 64px;
+$-pinterest-32-y: 32px;
+$-pinterest-32-offset-x: -64px;
+$-pinterest-32-offset-y: -32px;
+$-pinterest-32-width: 32px;
+$-pinterest-32-height: 32px;
+$-pinterest-32-total-width: 128px;
+$-pinterest-32-total-height: 96px;
+$-pinterest-32-image: 'sprite.png';
+$-pinterest-32: (64px, 32px, -64px, -32px, 32px, 32px, 128px, 96px, 'sprite.png', 'Pinterest-32', );
+$-r-s-s-32-name: 'RSS-32';
+$-r-s-s-32-x: 0px;
+$-r-s-s-32-y: 0px;
+$-r-s-s-32-offset-x: 0px;
+$-r-s-s-32-offset-y: 0px;
+$-r-s-s-32-width: 32px;
+$-r-s-s-32-height: 32px;
+$-r-s-s-32-total-width: 128px;
+$-r-s-s-32-total-height: 96px;
+$-r-s-s-32-image: 'sprite.png';
+$-r-s-s-32: (0px, 0px, 0px, 0px, 32px, 32px, 128px, 96px, 'sprite.png', 'RSS-32', );
+$-twitter-bird-32-name: 'Twitter Bird-32';
+$-twitter-bird-32-x: 32px;
+$-twitter-bird-32-y: 64px;
+$-twitter-bird-32-offset-x: -32px;
+$-twitter-bird-32-offset-y: -64px;
+$-twitter-bird-32-width: 32px;
+$-twitter-bird-32-height: 32px;
+$-twitter-bird-32-total-width: 128px;
+$-twitter-bird-32-total-height: 96px;
+$-twitter-bird-32-image: 'sprite.png';
+$-twitter-bird-32: (32px, 64px, -32px, -64px, 32px, 32px, 128px, 96px, 'sprite.png', 'Twitter Bird-32', );
+$-vimeo-32-name: 'Vimeo-32';
+$-vimeo-32-x: 64px;
+$-vimeo-32-y: 64px;
+$-vimeo-32-offset-x: -64px;
+$-vimeo-32-offset-y: -64px;
+$-vimeo-32-width: 32px;
+$-vimeo-32-height: 32px;
+$-vimeo-32-total-width: 128px;
+$-vimeo-32-total-height: 96px;
+$-vimeo-32-image: 'sprite.png';
+$-vimeo-32: (64px, 64px, -64px, -64px, 32px, 32px, 128px, 96px, 'sprite.png', 'Vimeo-32', );
+$-word-press-32-name: 'WordPress-32';
+$-word-press-32-x: 96px;
+$-word-press-32-y: 0px;
+$-word-press-32-offset-x: -96px;
+$-word-press-32-offset-y: 0px;
+$-word-press-32-width: 32px;
+$-word-press-32-height: 32px;
+$-word-press-32-total-width: 128px;
+$-word-press-32-total-height: 96px;
+$-word-press-32-image: 'sprite.png';
+$-word-press-32: (96px, 0px, -96px, 0px, 32px, 32px, 128px, 96px, 'sprite.png', 'WordPress-32', );
+$-yahoo-01-32-name: 'Yahoo-01-32';
+$-yahoo-01-32-x: 96px;
+$-yahoo-01-32-y: 32px;
+$-yahoo-01-32-offset-x: -96px;
+$-yahoo-01-32-offset-y: -32px;
+$-yahoo-01-32-width: 32px;
+$-yahoo-01-32-height: 32px;
+$-yahoo-01-32-total-width: 128px;
+$-yahoo-01-32-total-height: 96px;
+$-yahoo-01-32-image: 'sprite.png';
+$-yahoo-01-32: (96px, 32px, -96px, -32px, 32px, 32px, 128px, 96px, 'sprite.png', 'Yahoo-01-32', );
+$-you-tube1-32-name: 'YouTube1-32';
+$-you-tube1-32-x: 96px;
+$-you-tube1-32-y: 64px;
+$-you-tube1-32-offset-x: -96px;
+$-you-tube1-32-offset-y: -64px;
+$-you-tube1-32-width: 32px;
+$-you-tube1-32-height: 32px;
+$-you-tube1-32-total-width: 128px;
+$-you-tube1-32-total-height: 96px;
+$-you-tube1-32-image: 'sprite.png';
+$-you-tube1-32: (96px, 64px, -96px, -64px, 32px, 32px, 128px, 96px, 'sprite.png', 'YouTube1-32', );
+$spritesheet-width: 128px;
+$spritesheet-height: 96px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($-digg-01-32, $-ebay-32, $-facebook-32, $-google-32, $-linked-in-32, $-pinterest-32, $-r-s-s-32, $-twitter-bird-32, $-vimeo-32, $-word-press-32, $-yahoo-01-32, $-you-tube1-32, );
+$spritesheet: (128px, 96px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(/assets/img/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
