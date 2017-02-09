@@ -1,5 +1,10 @@
+@import 'common/sprite';
+@import 'common/greating';
+
 body {
   margin: 0;
 }
 
-@import 'common/greating';
+.test {
+  @include sprite($-facebook-32);
+}
