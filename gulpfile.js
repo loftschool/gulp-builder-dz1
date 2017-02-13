@@ -35,3 +35,11 @@ $.gulp.task('default', $.gulp.series(
     'serve'
   )
 ));
+
+$.gulp.task('sprite:png', $.gulp.series(
+  'sprite:png'
+));
+
+$.gulp.task('copy:font', $.gulp.series(
+  'copy:font'
+));
