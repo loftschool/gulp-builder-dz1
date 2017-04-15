@@ -8,8 +8,8 @@ module.exports = function() {
         return {
           title: 'Pug',
           message:  error.message
-        }
-       }))
+        };
+      }))
       .pipe($.gulp.dest($.config.root));
   });
 };

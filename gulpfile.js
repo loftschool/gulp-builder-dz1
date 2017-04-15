@@ -3,19 +3,23 @@
 global.$ = {
   package: require('./package.json'),
   config: require('./gulp/config'),
+  merge: require('merge-stream'),
   path: {
-    task: require('./gulp/paths/tasks.js'),
-    jsFoundation: require('./gulp/paths/js.foundation.js'),
-    cssFoundation: require('./gulp/paths/css.foundation.js'),
-    app: require('./gulp/paths/app.js')
+    tasks: require('./gulp/paths/tasks.js'),
+    cssFoundation: require('./gulp/paths/css.foundation.js')
   },
   gulp: require('gulp'),
   del: require('del'),
   browserSync: require('browser-sync').create(),
-  gp: require('gulp-load-plugins')()
+  gp: require('gulp-load-plugins')(),
+  webpack: {
+    self: require('webpack'),
+    gulpWebpack: require('gulp-webpack'),
+    config: require('./webpack.config')
+  }
 };
 
-$.path.task.forEach(function(taskPath) {
+$.path.tasks.forEach(function(taskPath) {
   require(taskPath)();
 });
 
@@ -24,14 +28,15 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
-    'js:foundation',
-    'js:process',
     'copy:image',
     'css:foundation',
-    'sprite:svg'
+    'sprite:svg',
+    'sprite:img',
+    'fonts'
   ),
   $.gulp.parallel(
     'watch',
-    'serve'
+    'serve',
+    'webpack'
   )
 ));
