@@ -12,3 +12,6 @@
 4. ```npm install```
 6. ```run gulp``` 
 
+#### Changelog
+
+1. Added tasks `copy:fonts` and `sprite:png`
