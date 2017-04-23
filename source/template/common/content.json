@@ -1,0 +1,76 @@
+{
+  "author": {
+    "name": "Антон Гунов"
+  },
+  "socials": [
+    {
+      "name": "vkontakte",
+      "href": "#"
+    },
+    {
+      "name": "github",
+      "href": "https://github.com/anton-loftschool"
+    },
+    {
+      "name": "linkedin",
+      "href": "#"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Frontend",
+      "list": [
+        {
+          "name": "HTML5",
+          "percent": 80
+        },
+        {
+          "name": "CSS3",
+          "percent": 80
+        },
+        {
+          "name": "JavaScript & jQuery",
+          "percent": 80
+        }
+      ]
+    },
+    {
+      "title": "Backend",
+      "list": [
+        {
+          "name": "PHP",
+          "percent": 80
+        },
+        {
+          "name": "mySQL",
+          "percent": 80
+        },
+        {
+          "name": "Node.js & npm",
+          "percent": 80
+        },
+        {
+          "name": "Mongo.db",
+          "percent": 80
+        }
+      ]
+    },
+    {
+      "title": "WorkFlow",
+      "list": [
+        {
+          "name": "Git",
+          "percent": 80
+        },
+        {
+          "name": "Gulp",
+          "percent": 80
+        },
+        {
+          "name": "Bower",
+          "percent": 80
+        }
+      ]
+    }
+  ]
+}
