@@ -1,7 +1,56 @@
 extends ../_template
 
 block variables
-    - var title = 'Обо мне | ' + author.name
+  - var title = 'Обо мне | ' + author.name
 
 block content
-    h1 Обо мне
+  section.section.hero
+    ul.socials
+      each social in socials
+        li.socials__item
+          a(href=social.href class=`socials__link socials__link_${social.name}`)
+    a(href="").hamburger
+    a(href="").down-arrow
+      .hero__title
+        img(src="../../" alt="").section-title
+        .user.hero__user-block
+          .user__photo
+          .user__name
+            | #{author.name}
+          .user__description
+            | Личный сайт веб разработчика
+  section.section.about
+    .about__left
+      svg.triangle.triangle_white
+      .title.about__section-title
+        | Обо мне
+      .user-about
+        .user-about__picture
+        .user-about__title
+          .subtitle
+            | Кто я
+        .user-about__text
+          p Я веб разработчик из Новосибирска. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+          p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+    .about__right
+      svg.triangle.triangle_beige
+      .about-data
+        .about-data__description
+          .about-data__title
+            .subtitle
+              | Чем я могу быть полезен
+          .about-data__text
+            p Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+        .about-data__content
+          ul.skills
+            each skill in skills
+              li.skills_item
+                .skill-section
+                  .skill-section__title= skill.title
+                  ul.skill-section__list
+                    each item in skill.list
+                      li.skills-section__item
+                        .skill
+                          svg.skill__cicrle
+                          .skill__name= item.name
+  section.section.map

@@ -10,7 +10,7 @@
 > Установка последней версии Gulp CLI tools глобально (подробнее - [GitHub](https://github.com/gulpjs/gulp/blob/4.0/docs/getting-started.md) )
 
 4. ```npm install```
-6. ```run gulp``` 
+6. ```gulp``` 
 
 #### Changelog
 
