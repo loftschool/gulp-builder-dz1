@@ -1,12 +1,15 @@
-html, body {
-  width: 100%;
-  height: 100%;
-}
+@import "common/vars";
 
-.wrapper {
-  background-image: url('/assets/img/background-1920x1080.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-}
+@import "common/setups";
+@import "common/fonts";
+
+@import "common/mixins";
+
+@import "blocks/section-title";
+@import "blocks/hero";
+@import "blocks/user";
+@import "blocks/down-arrow";
+@import "blocks/about";
+@import "blocks/title";
+@import "blocks/triangle";
+@import "blocks/footer";

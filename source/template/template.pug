@@ -1,10 +1,11 @@
-block variables
-
 doctype html
 html
   head
     meta(charset="utf-8")
-    title #{title}
+
+    title
+      block title
+
     meta(content="" name="author")
     meta(content="" name="description")
     meta(content="" name="keywords")
@@ -26,4 +27,5 @@ html
   body
     .wrapper
       block content
+
     block footer

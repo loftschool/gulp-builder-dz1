@@ -1,7 +1,6 @@
-extends ../_template
+extends ../template
 
-block variables
-    - var title = 'Блог | ' + author.name
+block title
+  | Блог | #{author.name}
 
 block content
-    h1 Блог

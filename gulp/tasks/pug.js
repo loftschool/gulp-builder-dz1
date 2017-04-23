@@ -4,7 +4,7 @@ module.exports = function() {
   $.gulp.task('pug', function() {
     return $.gulp.src('./source/template/pages/*.pug')
       .pipe($.gp.data(function (file) {
-          return require('../../source/template/common/data.json');
+          return require('../../source/template/common/content.json');
       }))
       .pipe($.gp.pug({
           pretty: true

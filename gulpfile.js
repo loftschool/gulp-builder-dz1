@@ -29,6 +29,7 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'copy:image',
     'copy:fonts',
+    'copy:icons',
     'css:foundation',
     'sprite:svg',
     'sprite:png'

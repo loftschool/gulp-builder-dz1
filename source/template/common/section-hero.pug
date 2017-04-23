@@ -1,0 +1,20 @@
+section.section.hero
+  .hero__background
+    img(src="assets/img/background-1920x1080.jpg").hero__background-image
+  ul.socials
+    each social in socials
+      li.socials__item
+        a(href=social.href class=`socials__link socials__link_${social.name}`)
+  a(href="").hamburger
+  a(href="").down-arrow
+    img(src="assets/icons/arrow_down.svg").down-arrow__icon
+  .hero__title
+    img(src="assets/img/decor/portfolio-header.png").section-title
+    .user.hero__user-block
+      .user__photo
+        .user__photo-avatar
+          img(src="assets/img/user.jpg").user__photo-img
+      .user__name
+        | #{author.name}
+      .user__description
+        | Личный сайт веб разработчика

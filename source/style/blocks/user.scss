@@ -1,0 +1,33 @@
+.user {
+	text-align: center;
+}
+
+.user__photo {
+  width: 141px;
+  height: 141px;
+  -webkit-border-radius: 70px 71px 71px 70px/70px 70px 71px 71px;
+  -moz-border-radius: 70px 71px 71px 70px/70px 70px 71px 71px;
+  border-radius: 70px 71px 71px 70px/70px 70px 71px 71px;
+  background-color: #e2e2e2;
+  margin-bottom: 20px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.user__photo-avatar {
+	display: block;
+	max-width: 100%;
+}
+
+.user__name {
+	color: #fff;
+  font-size: 35px;
+  font-family: RobotoBoldItalic;
+}
+
+.user__description {
+	color: #fff;
+  font-size: 16px;
+  font-family: RobotoRegular;
+}
+
