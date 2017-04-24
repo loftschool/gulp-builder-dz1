@@ -1,6 +1,9 @@
 extends ../template
 
 block title
-  | 'Мои работы | #{author.name}'
+  | Мои работы | #{author.name}
 
 block content
+
+block footer
+  include ../common/footer-page

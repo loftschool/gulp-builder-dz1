@@ -1,7 +1,7 @@
 @import "common/vars";
 
-@import "common/setups";
 @import "common/fonts";
+@import "common/setups";
 
 @import "common/mixins";
 
@@ -12,4 +12,5 @@
 @import "blocks/about";
 @import "blocks/title";
 @import "blocks/triangle";
-@import "blocks/footer";
+@import "blocks/footer-index";
+@import "blocks/footer-page";
