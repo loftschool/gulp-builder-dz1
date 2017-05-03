@@ -1,0 +1,13 @@
+extends ../page-template
+
+block title
+  | Сайт-портфолио | #{author.name}
+
+block content
+  .welcome-page.welcome-page_background-image
+    .welcome-page__login-button
+      include ../blocks/login-button
+    .welcome-page__user-block
+      include ../blocks/user-block
+    .welcome-page__copyright-text
+      include ../blocks/copyright-text

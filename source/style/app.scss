@@ -1,16 +1,6 @@
+@import "common/mixins";
 @import "common/vars";
-
 @import "common/fonts";
 @import "common/setups";
 
-@import "common/mixins";
-
-@import "blocks/section-title";
-@import "blocks/hero";
-@import "blocks/user";
-@import "blocks/down-arrow";
-@import "blocks/about";
-@import "blocks/title";
-@import "blocks/triangle";
-@import "blocks/footer-index";
-@import "blocks/footer-page";
+@import "blocks/**/*";

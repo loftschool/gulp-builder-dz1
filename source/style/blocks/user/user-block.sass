@@ -1,0 +1,90 @@
+.user-block
+  height: 395px + 45px
+  width: 380px
+  background-color: rgba(18, 38, 32, 0.6)
+  text-align: center
+  color: #fff
+  @include border-radius(10px)
+
+.user-block__data
+  margin: 40px auto
+
+.user-block__photo
+  width: 141px
+  margin: 0 auto 20px
+
+.user-photo
+  background: url("../img/user-photo.png") no-repeat center center
+  width: 141px
+  height: 141px
+
+.user-block__name
+  margin-bottom: 10px
+
+.user-name
+  font-size: 28px
+  font-weight: 500
+
+.user-block__info
+  margin-bottom: 36px
+
+.user-info
+
+.user-block__social
+
+.user-social
+
+.user-social__item
+  font-size: 28px
+  display: inline-block
+  margin: 0 20px
+  &:first-child
+    margin: 0
+  &:last-child
+    margin: 0
+
+.user-social__link
+  color: #fff
+  opacity: 0.5
+
+.user-social_active-link_green
+  a:hover
+    opacity: 1
+    color: $dark-green
+
+.user-social_active-link_white
+  a:hover
+    opacity: 1
+
+.user-block__menu
+  position: absolute
+  bottom: 0
+  width: 100%
+  li:first-child
+    border-radius: 0 0 0 10px
+  li:last-child
+    border-radius: 0 0 10px 0
+
+.user-menu
+  display: flex
+
+.user-menu__item
+  background-color: #6c9c5a
+  font-weight: 500
+  flex-grow: 1
+  padding: 16px 0 18px
+  &:hover
+    background-color: $dark-green
+    cursor: pointer
+
+.user-menu__item_inner-item
+  border-top: 0
+  border-right: 2px
+  border-bottom: 0
+  border-left: 2px
+  border-style: solid
+  border-color: rgba(222, 227, 231, 0.5)
+
+.user-menu__link
+  color: #fff
+  text-decoration: none

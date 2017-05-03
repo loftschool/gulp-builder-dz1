@@ -1,13 +1,19 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+@import url("http://fonts.googleapis.com/css?family=Roboto:300,400,500");
+
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
 	height: 100%;
-	margin: 0;
-	font-family: "RobotoLight", Arial, sans-serif;
+  width: 100%;
+	margin: 0 auto;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 1.42;
+  // line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -35,4 +41,13 @@ h1, h2, h3, h4, h5 {
 
 * {
 	box-sizing: border-box;
+}
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
