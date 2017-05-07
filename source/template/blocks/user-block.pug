@@ -9,24 +9,16 @@
       .user-info
         | Личный сайт веб разработчика
     .user-block__social
-      ul.user-social.user-social_active-link_green
-        li.user-social__item
-          a(href="#").user-social__link
-            i.fa.fa-vk
-        li.user-social__item
-          a(href="#").user-social__link
-            i.fa.fa-github-alt
-        li.user-social__item
-          a(href="#").user-social__link
-            i.fa.fa-linkedin
+      include ../../blocks/user-social/user-social
+
   nav.user-block__menu
     ul.user-menu
       li.user-menu__item
-        a(href="#").user-menu__link
+        a(href="/works.html").user-menu__link
           | Мои работы
       li.user-menu__item.user-menu__item_inner-item
-        a(href="#").user-menu__link
+        a(href="/about.html").user-menu__link
           | Обо мне
       li.user-menu__item
-        a(href="#").user-menu__link
+        a(href="/blog.html").user-menu__link
           | Блог
