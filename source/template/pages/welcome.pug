@@ -1,10 +1,10 @@
-extends ../page-template
+extends ../template
 
 block title
   | Сайт-портфолио | #{author.name}
 
 block content
-  .welcome-page.welcome-page_background-image
+  .welcome-page.welcome-page--bg-image
     .welcome-page__login-button
       include ../../blocks/login-button/login-button
     .welcome-page__user-block
