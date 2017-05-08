@@ -4,6 +4,9 @@ block title
   | Обо мне | #{author.name}
 
 block content
-  .wrapper
-    include ../../blocks/section-hero/section-hero
+  .page-about.wrapper
+    .page-about__section-hero
+      include ../../blocks/section-hero/section-hero
+    .page-about__section-map
+      include ../../blocks/section-map/section-map
   include ../../blocks/page-footer/page-footer
