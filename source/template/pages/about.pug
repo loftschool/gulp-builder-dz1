@@ -1,12 +1,9 @@
-extends ../template
+extends ../page-template
 
 block title
   | Обо мне | #{author.name}
 
 block content
-  include ../common/section-hero
-  include ../common/section-about
-  // include ../common/section-map
-
-block footer
+  .wrapper
+    include ../../blocks/section-hero/section-hero
   include ../../blocks/page-footer/page-footer

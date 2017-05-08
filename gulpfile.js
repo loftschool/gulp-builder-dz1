@@ -28,6 +28,7 @@ $.gulp.task('default', $.gulp.series(
     'js:foundation',
     'js:process',
     'copy:image',
+    'copy:image-block',
     'copy:fonts',
     'copy:icons',
     'css:foundation',

@@ -1,0 +1,36 @@
+.user-block
+  height: 395px + 45px
+  width: 380px
+  background-color: rgba(18, 38, 32, 0.6)
+  text-align: center
+  color: #fff
+  @include border-radius(10px)
+
+.user-block__data
+  // todo `margin-top: 40px` doesn't work
+  padding-top: 40px
+
+.user-block__photo
+  width: 141px
+  margin: 0 auto 20px
+
+.user-block__name
+  font-size: 28px
+  margin-bottom: 10px
+
+.user-block__info
+  margin-bottom: 36px
+
+.user-block__social
+  a:hover
+    opacity: 1
+    color: $dark-green
+
+.user-block__menu
+  position: absolute
+  bottom: 0
+  width: 100%
+  li:first-child
+    border-radius: 0 0 0 10px
+  li:last-child
+    border-radius: 0 0 10px 0
