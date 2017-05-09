@@ -3,8 +3,26 @@ section.section-about
     <!-- todo https://toster.ru/q/79130 -->
     svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangle.section-about__triangles
       polygon(points="0,0 0,100 1000,100").triangle_fill_white
-    .title.section-about__title
+    .subtitle
       | Обо мне
   .section-about__right
     svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangle.section-about__triangles
       polygon(points="0,100 1000,100 1000,0").triangle_fill_beige
+    .right
+      .right__title.subtitle
+        | Чем я могу быть вам полезен
+      .right__description
+        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+      ul.right__skills
+        each skill in skills
+          .skills
+            .skill__title= skill.title
+            ul.skill__list
+              each list in skill.list
+                li.skill__list-item
+                  svg(viewBox='0 0 110 110').circles
+                    circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                    circle(class=`circle-${list.percent}` r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second
+                  .skill__name= list.name
+
+
