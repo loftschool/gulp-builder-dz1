@@ -1,0 +1,42 @@
+.section-hero-blog
+  position: relative
+  height: 440px
+  background: url("../img/section-hero-blog/bg-hero.png") no-repeat center center
+  background-size: cover
+
+.section-hero-blog__social
+  position: absolute
+  top: 34px
+  left: 28px
+  a
+    color: #fff
+    opacity: 1
+    &:hover
+      color: $green
+
+.section-hero-blog__hamburger
+  position: absolute
+  top: 28px
+  right: 28px
+
+.section-hero-blog__box
+  @include centered(y)
+  width: 100%
+  text-align: center
+
+.section-hero-blog__user-photo
+  width: 141px
+  margin: 0 auto
+
+.section-hero-blog__blog-header
+  opacity: 0.12
+  margin-bottom: -155px
+  margin-top: -35px
+
+.section-hero-blog__title
+  margin-bottom: 40px
+
+.section-hero-blog__info
+  color: #fff
+  bottom: 60px
+  @include centered(x)

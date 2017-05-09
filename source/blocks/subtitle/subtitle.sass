@@ -1,0 +1,20 @@
+.subtitle
+  color: #566358
+  text-transform: uppercase
+  font-family: "SansusWebissimoRegular", Arial, sans-serif
+  position: relative
+  font-size: 35px
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    bottom: -20px
+    left: 50%
+    background-color: #566358
+    width: 90px
+    height: 3px
+    margin-left: -45px
+  &--white
+    color: #fff
+    &::after
+      background-color: #fff
