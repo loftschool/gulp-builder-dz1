@@ -3,17 +3,31 @@ section.section-about
     <!-- todo https://toster.ru/q/79130 -->
     svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangle.section-about__triangles
       polygon(points="0,0 0,100 1000,100").triangle_fill_white
-    .subtitle
-      | Обо мне
+    .about-left
+      .about-left__title
+        .about-left__title-header
+          img(src="assets/img/section-about/about-header.svg")
+        .about-left__title-text
+          .main-title
+            | Обо мне
+      .about-left__info
+        .about-left__photo
+          img(src="assets/img/section-about/photo.jpg" alt="")
+        .about-me__info-content
+          .about-me__subtitle
+            .subtitle
+              | Кто я
+          p.about-me__text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+          p.about-me__text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
   .section-about__right
     svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangle.section-about__triangles
       polygon(points="0,100 1000,100 1000,0").triangle_fill_beige
-    .right
-      .right__title.subtitle
+    .about-right
+      .about-right__title.subtitle
         | Чем я могу быть вам полезен
-      .right__description
+      .about-right__description
         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-      ul.right__skills
+      ul.about-right__skills
         each skill in skills
           .skills
             .skill__title= skill.title
