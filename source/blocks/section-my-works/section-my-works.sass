@@ -1,0 +1,115 @@
+.section-my-works
+  @extend %clearfix
+  background-color: #f8f9f5
+
+.section-my-works__left, .section-my-works__right
+  float: left
+  width: 50%
+  position: relative
+
+.section-my-works__left, .section-my-works__right
+  background: #f8f9f5
+
+.section-my-works__triangles
+  position: absolute
+  bottom: 100%
+
+.triangle_fill_f8f9f5
+  fill: #f8f9f5
+
+.my-works-left
+  position: relative
+  background: #f8f9f5
+  z-index: 1
+
+.my-works__title
+  text-align: center
+  width: 200%
+  height: 160px
+
+.my-works-left__title-header
+  img
+    opacity: 0.1
+    width: 360px
+
+.my-works-left__title-text
+  margin-top: -87px
+
+.my-works-desc
+  background-color: #ebefe2
+  height: 600px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.my-works-desc__title
+  width: 320px
+  text-align: center
+
+.my-works-button
+  margin-top: 40px
+  border-radius: 23px
+  background-color: $green
+  width: 200px
+  height: 45px
+  color: #fff
+  font-family: "Roboto", Arial, sans-serif
+  font-weight: 500
+  border: 1px solid $green
+  i
+    padding-right: 10px
+  &:hover
+    background-color: $dark-green
+    border: 1px solid $dark-green
+    cursor: pointer
+
+.my-works-desc__info
+  margin-top: 52px
+  color: $green
+  font-weight: 500
+
+.my-works-right
+  margin-top: 160px
+  z-index: -1
+  height: 600px
+  background-color: #e1e4d7
+
+.carousel-preview
+  height: 400px
+  text-align: center
+  img
+    height: 400px
+
+.carousel-arrows
+  display: flex
+  height: 200px
+  background-position: center
+  img
+    height: 200px
+    background-position: center
+
+.carousel-arrows__item
+  flex-grow: 1
+  position: relative
+
+.carousel-arrows__item-fon
+  background-color: rgba(#555, 0.5)
+  height: 100%
+  width: 100%
+
+.carousel-arrows--center
+  @include centered("both")
+  width: 50px
+
+.carousel-arrows__down
+  background: url("../img/section-my-works/project-1.png") no-repeat center center
+  background-size: cover
+  height: 100%
+  width: 100%
+
+.carousel-arrows__up
+  background: url("../img/section-my-works/project-3.png") no-repeat center center
+  background-size: cover
+  height: 100%
+  width: 100%
