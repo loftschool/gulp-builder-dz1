@@ -1,0 +1,56 @@
+section.section-my-works-about.section-my-works-about--bg-image
+  img(src="assets/img/section-my-works-about/leaf-1.png").leaf-1
+  img(src="assets/img/section-my-works-about/leaf-2.png").leaf-2
+  img(src="assets/img/section-my-works-about/leaf-3.png").leaf-3
+  .my-works-about__title
+    .my-works-about__title-header
+      img(src="assets/img/section-about/about-header.svg")
+    .my-works-about__title-text
+      .main-title
+        | Что обо мне
+        br
+        | говорят
+  .fman
+    .fman__item
+      .fman-item__photo
+        img(src="assets/img/section-my-works-about/kovald.png")
+      .fman-item__msg
+        | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+        img(src="assets/img/section-my-works-about/quote.png").fman-item__quote-icon
+      .fman-item__name
+        | Ковальчук Дмитрий
+      .fman-item__who
+        | — основатель Loftschool
+    .fman__item
+      .fman-item__photo
+        img(src="assets/img/section-my-works-about/kovald.png")
+      .fman-item__msg
+        | Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+        img(src="assets/img/section-my-works-about/quote.png").fman-item__quote-icon
+      .fman-item__name
+        | Сабанцев Владимир
+      .fman-item__who
+        | — преподаватель
+  .section-my-works-about__feedback
+    .feedback
+      .feedback__title
+        .subtitle
+          | Связаться со мной
+      form.feedback-form
+        .feedback-form__input-wrapper
+          input.feedback-form__input(id="feedback-name" type="text", name="feedback-name" , placeholder="Имя")
+          label.feedback-form__input-label(for="feedback-name")
+        .feedback-form__input-wrapper
+          input.feedback-form__input(id="feedback-email" type="text", name="feedback-email", placeholder="Email")
+          label.feedback-form__input-label(for="feedback-email")
+        .feedback-form__input-wrapper
+          textarea.feedback-form__textarea(id="feedback-message" rows="6", name="feedback-message", placeholder="Ваше сообщение")
+          label.feedback-form__input-label(for="feedback-message")
+      nav.feedback-menu
+        ul.feedback-menu__list
+          li.feedback-menu__item
+            a(href="/").feedback-menu__link
+              | Отправить
+          li.feedback-menu__item
+            a(href="/").feedback-menu__link
+              | Очистить

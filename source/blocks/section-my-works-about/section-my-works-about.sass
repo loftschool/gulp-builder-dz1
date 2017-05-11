@@ -1,0 +1,146 @@
+.section-my-works-about
+  position: relative
+  height: 1400px
+  width: 100%
+
+.leaf-1
+  position: absolute
+  left: 25%
+  top: 50%
+
+.leaf-2
+  position: absolute
+  left: 20%
+  top: 5%
+
+.leaf-3
+  position: absolute
+  left: 80%
+  top: 50%
+
+.my-works-about__title
+  margin-top: 20px
+  @include centered("x")
+  text-align: center
+
+.my-works-about__title-text
+  text-align: center
+  margin-top: -150px
+
+.my-works-about__title-header
+  opacity: 0.1
+
+.fman
+  padding-top: 240px
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: stretch
+  align-content: stretch
+
+.fman__item
+  width: 400px
+  text-align: center
+  position: relative
+
+.fman-item__photo
+  margin-bottom: 20px
+
+.fman-item__quote-icon
+  position: absolute
+  left: 0
+  top: 0
+
+.fman-item__msg
+  text-align: left
+  line-height: 26px
+  color: #5d5a55
+  font-style: italic
+  position: relative
+
+.fman-item__name
+  margin: 25px 0px 10px
+  font-weight: 500
+  color: $dark-green
+
+.fman-item__who
+  color: #373e42
+  font-style: italic
+
+.section-my-works-about--bg-image
+  background: url("../img/section-my-works-about/bg-my-works-about.png") no-repeat center center
+  background-size: cover
+
+.section-my-works-about__feedback
+  margin-top: 50px
+  @include centered("x")
+
+.feedback
+  width: 380px
+  background-color: rgba(#dadbd6, 0.6)
+  text-align: center
+  @include border-radius(10px)
+
+.feedback__title
+  padding-top: 35px
+
+.feedback-form
+  margin-top: 52px
+
+.feedback-form__input-wrapper
+  display: inline-block
+  margin: 0 auto 20px
+  position: relative
+
+.feedback-form__input
+  width: 320px
+  border: 0
+  height: 45px
+  border-radius: 22px
+  padding-left: 19px
+  color: rgba(#373e42, 0.5)
+  &:focus
+    outline: none
+    color: #373e42
+    border: 1px solid $dark-green
+    + .login-form__input-label
+      fill: $dark-green
+
+.feedback-form__textarea
+  width: 320px
+  border: 0
+  border-radius: 22px
+  padding-left: 19px
+  padding-top: 15px
+  color: rgba(#373e42, 0.5)
+  &:focus
+    outline: none
+    color: #373e42
+    border: 1px solid $dark-green
+    + .login-form__input-label
+      fill: $dark-green
+
+.feedback-menu__list
+  display: flex
+  li:first-child
+    border-radius: 0 0 0 10px
+    border: 0
+    border-right: 2px
+    border-style: solid
+    border-color: rgba(222, 227, 231, 0.5)
+  li:last-child
+    border-radius: 0 0 10px 0
+
+.feedback-menu__item
+  background-color: rgba($green, 0.8)
+  font-weight: 500
+  flex: 1
+  padding: 16px 0 18px
+  &:hover
+    background-color: rgba($dark-green, 0.9)
+    cursor: pointer
+
+.feedback-menu__link
+  color: #fff
+  text-decoration: none
