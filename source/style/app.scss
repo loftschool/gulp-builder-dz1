@@ -1,5 +1,7 @@
-body {
-  margin: 0;
-}
+@import "common/mixins";
+@import "common/vars";
+@import "common/fonts";
+@import "common/setups";
 
-@import 'common/greating';
+@import "blocks/**/*";
+@import "../blocks/**/*";

@@ -1,0 +1,46 @@
+.section-hero
+  position: relative
+  height: 600px
+  background: url("../img/section-hero/bg-hero.png") no-repeat center center
+  background-size: cover
+
+.section-hero__social
+  position: absolute
+  top: 34px
+  left: 28px
+  a
+    color: #fff
+    opacity: 1
+    &:hover
+      color: $green
+
+.section-hero__hamburger
+  position: absolute
+  top: 28px
+  right: 28px
+
+.section-hero__title
+  @include centered(y)
+  width: 100%
+  text-align: center
+
+.section-hero__portfolio-header
+  @include centered()
+  opacity: 0.12
+
+.section-hero__user-photo
+  width: 141px
+  margin: 0 auto
+
+.section-hero__user-name
+  margin-top: 30px
+  color: #fff
+  font-size: 35px
+
+.section-hero__user-info
+  margin-top: 8px
+  color: #fff
+
+.section-hero__down-arrow
+  bottom: 40px
+  @include centered(x)

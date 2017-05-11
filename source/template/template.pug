@@ -1,10 +1,11 @@
-block variables
-
 doctype html
 html
   head
     meta(charset="utf-8")
-    title #{title}
+
+    title
+      block title
+
     meta(content="" name="author")
     meta(content="" name="description")
     meta(content="" name="keywords")
@@ -12,6 +13,7 @@ html
     meta(content="ie=edge" http-equiv="x-ua-compatible")
 
     //- favicon block start
+    link(rel="shortcut icon" href="assets/img/favicon.png")
     //- favicon block end
 
     link(rel='stylesheet' href='/assets/css/foundation.css')
@@ -25,3 +27,4 @@ html
 
   body
     block content
+    block footer

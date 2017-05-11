@@ -1,0 +1,16 @@
+.hero {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__title {
+  @include centered(y);
+  text-align: center;
+  width: 100%;
+}
+
+.hero__user-block {
+  @include centered();
+}
+

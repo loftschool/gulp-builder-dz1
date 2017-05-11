@@ -1,0 +1,16 @@
+extends ../template
+
+block title
+  | Обо мне | #{author.name}
+
+block content
+  .page-about.wrapper
+    .page-about__section-hero
+      include ../../blocks/section-hero/section-hero
+    .page-about__about
+      include ../../blocks/section-about/section-about
+    .page-about__section-map
+      include ../../blocks/section-map/section-map
+
+block footer
+  include ../../blocks/page-footer/page-footer

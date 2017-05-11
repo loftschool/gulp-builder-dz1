@@ -1,0 +1,30 @@
+.login
+  .login__title
+    .subtitle.subtitle--white
+      | Авторизуйтесь
+  form.login-form
+    .login-form__input-wrapper
+      input.login-form__input(id="user-login-name" type="text", name="user-login-name" , placeholder="Логин")
+      label.login-form__input-label(for="user-login-name").login-form__icon
+        i.fa.fa-user
+    .login-form__input-wrapper
+      input.login-form__input(id="user-password" type="password", name="user-password", placeholder="Пароль")
+      label.login-form__input-label(for="user-password").login-form__icon
+        i.fa.fa-key
+    .login-form__user-check-wrapper
+      input.login-form__user-check(type="checkbox", id="user-check")
+      label.login-form__user-check-label(for="user-check") Я человек
+    .login-form__user-question Вы точно не робот?
+    .login-form__user-radio-wrapper
+      input.login-form__user-radio(type="radio", id="user-radio-yes", name="user-question-answer", value="yes")
+      label.login-form__user-radio-label(for="user-radio-yes") Да
+      input.login-form__user-radio(type="radio", id="user-radio-no", name="user-question-answer", value="no")
+      label.login-form__user-radio-label(for="user-radio-no") Не уверен
+  nav.login-menu
+    ul.login-menu__list
+      li.login-menu__item
+        a(href="/").login-menu__link
+          | На главную
+      li.login-menu__item
+        a(href="#").login-menu__link
+          | Войти

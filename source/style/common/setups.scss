@@ -1,0 +1,50 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+	height: 100%;
+  width: 100%;
+	margin: 0 auto;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

@@ -1,0 +1,84 @@
+.section-blog
+  @extend %clearfix
+  background-color: #faf8f0
+  height: 100%
+
+.section-blog__left, .section-blog__right
+  float: left
+  width: 50%
+  position: relative
+  margin-top: -150px
+  fill: #faf8f0
+
+.section-blog__triangle
+  fill: #faf8f0
+
+.section-blog__container
+  padding-top: 70px
+
+.section-blog__menu
+  float: left
+  width: 25%
+
+.articles-menu
+  text-align: right
+
+.articles-menu__item
+  display: inline-block
+  padding: 13px
+  margin-left: 100px
+  margin-bottom: 5px
+  border-right: 3px solid #faf8f0
+  &:hover
+    border-right: 3px solid $green
+    font-weight: 500
+    a
+      color: $green
+
+.articles-menu__item--active
+  border-right: 3px solid $green
+  font-weight: 500
+  a
+    color: $green
+
+.article-link
+  text-decoration: none
+  color: #455a64
+
+.section-blog__articles
+  padding-left: 120px
+  float: left
+  width: 75%
+
+.articles
+  width: 980px
+
+.article
+  margin-bottom: 70px
+  &::after
+    content: ""
+    display: block
+    width: 680px
+    height: 3px
+    background-color: #ecebe4
+    margin-top: 70px
+  &:last-child
+    &::after
+      display: none
+
+.article__title
+  color: #455a64
+  font-size: 36px
+  font-family: "SansusWebissimoRegular", Arial, sans-serif
+  margin-bottom: 20px
+
+.article__created-at
+  color: $green
+  margin-bottom: 20px
+
+.article__content
+  width: 880px
+  color: #455a64
+  line-height: 29px
+  p
+    margin-bottom: 15px

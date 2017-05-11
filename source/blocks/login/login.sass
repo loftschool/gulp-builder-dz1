@@ -1,0 +1,156 @@
+$white80: rgba(#ffffff, 0.8)
+
+.login
+  width: 380px
+  background-color: rgba(18, 38, 32, 0.6)
+  text-align: center
+  color: #fff
+  @include border-radius(10px)
+
+.login__title
+  padding-top: 35px
+
+.login-form
+  margin-top: 52px
+
+.login-form__input-wrapper
+  display: inline-block
+  margin: 0 auto 20px
+  position: relative
+
+.login-form__icon
+  width: 45px
+  height: 45px
+  padding: 14px 0 0 3px
+  position: absolute
+  top: 0
+  left: 0
+  border-radius: 22px 0 0 22px
+  background-color: #f0efe9
+  color: #c4cbcd
+
+.login-form__input
+  width: 295px
+  border: 0
+  height: 45px
+  border-radius: 0 22px 22px 0
+  margin-left: 45px
+  padding-left: 19px
+  color: rgba(#373e42, 0.5)
+  &:focus
+    outline: none
+    color: #373e42
+    border: 1px solid $dark-green
+    + .login-form__input-label
+      fill: $dark-green
+
+.login-form__user-check-wrapper
+  margin: 0 auto 17px
+  line-height: 20px
+
+.login-form__user-check
+  display: none
+
+.login-form__user-check-label
+  display: inline-block
+  cursor: pointer
+  position: relative
+  padding-left: 30px
+  color: $white80
+
+.login-form__user-check-label:before
+  content: ""
+  display: inline-block
+  box-sizing: border-box
+  width: 20px
+  height: 20px
+  position: absolute
+  left: 0
+  background-color: #fff
+  border: 1px solid #ccc
+  @include border-radius(2px)
+
+.login-form__user-check:checked + .login-form__user-check-label:before
+  content: "\f00c"
+  font-family: "FontAwesome"
+  font-size: 13px
+  color: #fff
+  text-align: center
+  line-height: 20px
+  border: 0
+  background-color: $green
+  border-color: $green
+
+.login-form__user-question
+  margin-bottom: 11px
+  font-weight: 500
+  font-size: 16px
+  color: $white80
+
+.login-form__user-radio-wrapper
+  margin-bottom: 40px
+
+.login-form__user-radio
+  display: none
+
+.login-form__user-radio-label
+  display: inline-block
+  cursor: pointer
+  position: relative
+  margin-left: 36px
+  padding-left: 29px
+  color: $white80
+
+.login-form__user-radio-label:first-of-type
+  margin-left: 0
+
+.login-form__user-radio-label:before
+  content: ""
+  display: inline-block
+  box-sizing: border-box
+  width: 20px
+  height: 20px
+  position: absolute
+  left: 0
+  background-color: #ffffff
+  border: 6px solid #ffffff
+  border-radius: 50%
+
+.login-form__user-radio:checked + .login-form__user-radio-label:before
+  content: ""
+  display: inline-block
+  box-sizing: border-box
+  width: 20px
+  height: 20px
+  position: absolute
+  left: 0
+  background-color: $green
+  border: 6px solid #ffffff
+  border-radius: 50%
+
+.login-form__user-radio:checked + .login-form__user-radio-label
+  color: $green
+
+.login-menu__list
+  display: flex
+  li:first-child
+    border-radius: 0 0 0 10px
+    border: 0
+    border-right: 2px
+    border-style: solid
+    border-color: rgba(222, 227, 231, 0.5)
+  li:last-child
+    border-radius: 0 0 10px 0
+
+.login-menu__item
+  background-color: #6c9c5a
+  font-weight: 500
+  flex: 1
+  padding: 16px 0 18px
+  &:hover
+    background-color: $dark-green
+    cursor: pointer
+
+.login-menu__link
+  color: #fff
+  text-decoration: none

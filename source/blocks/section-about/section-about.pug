@@ -1,0 +1,42 @@
+section.section-about
+  .section-about__left
+    <!-- todo https://toster.ru/q/79130 -->
+    svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangle.section-about__triangles
+      polygon(points="0,0 0,100 1000,100").triangle_fill_white
+    .about-left
+      .about-left__title
+        .about-left__title-header
+          img(src="assets/img/section-about/about-header.svg")
+        .about-left__title-text
+          .main-title
+            | Обо мне
+      .about-left__info
+        .about-left__photo
+          img(src="assets/img/section-about/photo.jpg" alt="")
+        .about-me__info-content
+          .about-me__subtitle
+            .subtitle
+              | Кто я
+          p.about-me__text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+          p.about-me__text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+  .section-about__right
+    svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangle.section-about__triangles
+      polygon(points="0,100 1000,100 1000,0").triangle_fill_beige
+    .about-right
+      .about-right__title.subtitle
+        | Чем я могу быть вам полезен
+      .about-right__description
+        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+      ul.about-right__skills
+        each skill in skills
+          .skills
+            .skill__title= skill.title
+            ul.skill__list
+              each list in skill.list
+                li.skill__list-item
+                  svg(viewBox='0 0 110 110').circles
+                    circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                    circle(class=`circle-${list.percent}` r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second
+                  .skill__name= list.name
+
+

@@ -1,0 +1,33 @@
+$footer-info-height: 147px + 30px + 20px
+
+.footer-info
+  height: $footer-info-height
+  margin-top: -$footer-info-height
+  background-color: #373e42
+  padding: 30px 0 20px
+  display: flex
+  line-height: 28px
+
+.footer-info__item
+  flex: 1
+  padding: 0 70px 0 30px
+  height: 97px
+  &:first-child
+    border-right: 1px solid rgba(255, 255, 255, 0.2)
+  &:last-child
+    border-left: 1px solid rgba(255, 255, 255, 0.2)
+
+.footer-info__text
+  max-width: 360px
+  font-family: "Roboto", Arial, sans-serif
+  color: #fff
+  font-weight: 300
+
+.footer-info__menu
+  margin-bottom: 30px
+
+.footer-info__social
+  a:hover
+    opacity: 1
+
+.footer-info__quote

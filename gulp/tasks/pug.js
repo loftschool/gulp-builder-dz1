@@ -3,8 +3,13 @@
 module.exports = function() {
   $.gulp.task('pug', function() {
     return $.gulp.src('./source/template/pages/*.pug')
-      .pipe($.gp.pug({ pretty: true }))
-      .on('error', $.gp.notify.onError(function(error) {
+      .pipe($.gp.data(function (file) {
+          return require('../../source/template/common/content.json');
+      }))
+      .pipe($.gp.pug({
+          pretty: true
+      }))
+      .on('error', $.gp.notify.onError(function (error) {
         return {
           title: 'Pug',
           message:  error.message
